@@ -1,0 +1,10 @@
+build
+node_modules
+.idea
+UEngine/Content
+UEngine/Intermediate
+UEngine/Binaries
+UEngine/Config
+UEngine/Saved
+UEngine/.vs
+
