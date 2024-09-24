@@ -1,8 +1,8 @@
 //
 // const isDev = require('esbuild')
-//     .build({
+//     .HTML5({
 //         entryPoints: [path.resolve('src', 'index.tsx')],
-//         outdir: 'build',
+//         outdir: 'HTML5',
 //         outfile: 'output.js',
 //         bundle: true,
 //         loader: { '.ts': 'ts' },

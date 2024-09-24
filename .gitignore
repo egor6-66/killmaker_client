@@ -1,4 +1,4 @@
-build
+HTML5
 node_modules
 .idea
 UEngine/Content
@@ -7,4 +7,4 @@ UEngine/Binaries
 UEngine/Config
 UEngine/Saved
 UEngine/.vs
-
+UEngine/.idea

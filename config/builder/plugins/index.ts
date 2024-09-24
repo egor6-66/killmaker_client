@@ -1,3 +1,14 @@
+import { postcssModules, sassPlugin } from 'esbuild-sass-plugin';
+
 import devServerPlugin from './devServer';
 
-export { devServerPlugin };
+const sharedPlugins = [
+    sassPlugin({
+        filter: /\.scss$/i,
+        type: 'css',
+        loadPaths: ['./src/styles'],
+        transform: postcssModules({ basedir: '[path][local]' }),
+    }),
+];
+
+export { devServerPlugin, sharedPlugins };

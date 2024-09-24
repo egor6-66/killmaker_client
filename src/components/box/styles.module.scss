@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  border-radius: 12px;
+}
+
+.vertical{
+  flex-direction: column !important;
+}
+
+.bg{
+  background-color: var(--bg-dimming);
+  backdrop-filter: blur(2px);
+  border: 1px solid var(--border-secondary);
+  box-shadow: var(--box-shadow);
+}

@@ -2,24 +2,24 @@ import { BuildOptions, context } from 'esbuild';
 import { EventEmitter } from 'events';
 import express from 'express';
 
-import { devServerPlugin } from './plugins';
+import { devServerPlugin, sharedPlugins } from './plugins';
 interface IProps {
     serverPort: number;
     buildConfig: BuildOptions;
-    buildDir: string;
+    buildPath: string;
     htmlPath: string;
+    assetsPath: string;
 }
 
 const emitter = new EventEmitter();
 
-function bootstrap({ buildConfig, serverPort, buildDir, htmlPath }: IProps) {
+function bootstrap({ buildConfig, serverPort, buildPath, htmlPath, assetsPath }: IProps) {
     const app = express();
     context({
-        plugins: [devServerPlugin({ htmlPath, buildDir, emitter, serverPort })],
+        plugins: [devServerPlugin({ htmlPath, buildPath, emitter, serverPort, assetsPath }), ...sharedPlugins],
         ...buildConfig,
     }).then(async (res) => {
         await res.watch();
-        app.use('/', express.static(buildDir));
 
         app.get('/rebuild', (req, res) => {
             res.writeHead(200, {
@@ -31,6 +31,8 @@ function bootstrap({ buildConfig, serverPort, buildDir, htmlPath }: IProps) {
                 res.write('data: e\n\n');
             });
         });
+        app.use('*/assets', express.static(assetsPath));
+        app.use('/*', express.static(buildPath));
 
         app.listen(serverPort, () => {
             console.log(`dev server started on port ${serverPort}`);
