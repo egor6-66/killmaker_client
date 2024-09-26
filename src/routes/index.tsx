@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Route, Routes as RRDRoutes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
@@ -9,18 +9,6 @@ import styles from './styles.module.scss';
 
 const MainRoutes = () => {
     const location = useLocation();
-
-    const currentMenu = {
-        '': 0,
-        '/main': 0,
-        '/settings': 1,
-        '/settings/app': 1.1,
-        '/settings/viewer': 1.2,
-    };
-
-    useEffect(() => {
-        __location__ = currentMenu[location.pathname.replace(/\/$/, '')];
-    }, [location.pathname]);
 
     const routes = [
         { id: 0, path: '/', element: <MainPage /> },

@@ -1,0 +1,11 @@
+html[data-theme="base"] {
+    --text-primary: #fafafa;
+    --text-secondary: #d9d9d9;
+    --bg-primary: #141414;
+    --bg-secondary: #434343;
+    --bg-dimming-primary:rgba(0, 0, 0, 0.3);
+    --bg-dimming-secondary:rgba(9, 9, 9, 0.3);
+    --border-primary:#434343;
+    --border-secondary: #141414;
+    --box-shadow: 0px 0px 21px 14px rgba(34, 60, 80, 0.2);
+}

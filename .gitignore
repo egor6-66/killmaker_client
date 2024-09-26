@@ -1,10 +1,10 @@
 HTML5
 node_modules
 .idea
-UEngine/Content
-UEngine/Intermediate
-UEngine/Binaries
-UEngine/Config
-UEngine/Saved
-UEngine/.vs
-UEngine/.idea
+engine/Content
+engine/Intermediate
+engine/Binaries
+engine/Config
+engine/Saved
+engine/.vs
+engine/.idea

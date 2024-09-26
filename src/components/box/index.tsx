@@ -46,7 +46,7 @@ const Box = (props: Props) => {
     };
 
     return (
-        <motion.div key={animationKey} className={classNames(...getClasses())} {...getAnimation()} {...rest} transition={{ duration: __transitionSpeed__ }}>
+        <motion.div key={animationKey} className={classNames(...getClasses())} {...getAnimation()} {...rest} transition={{ duration: 0.5 }}>
             {children}
         </motion.div>
     );

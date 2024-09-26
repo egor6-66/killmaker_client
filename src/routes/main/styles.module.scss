@@ -1,3 +1,6 @@
-.wrapper{
+@use "utils/mixins";
 
+.wrapper {
+  @include mixins.box-size(100%, auto);
+  max-width: 500px;
 }

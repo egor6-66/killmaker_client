@@ -1,6 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap";
 
-/* src/reset.css */
+/* src/styles/reset.css */
 * {
   margin: 0;
   padding: 0;
@@ -89,19 +89,20 @@ legend {
   display: block;
 }
 
-/* src/themes/base.css */
+/* src/styles/themes/base.css */
 html[data-theme=base] {
   --text-primary: #fafafa;
   --text-secondary: #d9d9d9;
   --bg-primary: #141414;
   --bg-secondary: #434343;
-  --bg-dimming:rgba(0, 0, 0, 0.3);
+  --bg-dimming-primary:rgba(0, 0, 0, 0.3);
+  --bg-dimming-secondary:rgba(9, 9, 9, 0.3);
   --border-primary:#434343;
   --border-secondary: #141414;
   --box-shadow: 0px 0px 21px 14px rgba(34, 60, 80, 0.2);
 }
 
-/* src/index.css */
+/* src/styles/index.css */
 body,
 html {
   overflow: hidden;
@@ -152,7 +153,45 @@ html {
   font-weight: 600;
 }
 
+/* esbuild-sass-plugin:css-chunk:src/components/menu/styles.module.scss */
+._wrapper_dots0_1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 2px;
+}
+._wrapper_dots0_1 ._item_dots0_12 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  height: auto;
+  width: 100%;
+  color: var(--text-primary);
+  padding: 12px 20px;
+  background-color: var(--bg-dimming-primary);
+  border-radius: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+  border: 1px solid var(--border-secondary);
+  will-change: transform;
+}
+._wrapper_dots0_1 ._item_dots0_12:hover {
+  transform: scale(0.98);
+}
+
 /* esbuild-sass-plugin:css-chunk:src/routes/main/styles.module.scss */
+._wrapper_86r4c_1 {
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+}
 
 /* esbuild-sass-plugin:css-chunk:src/routes/settings/routes/app/styles.module.scss */
 ._wrapper_1dz3y_1 {

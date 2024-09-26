@@ -1101,7 +1101,7 @@ var require_react_development = __commonJS({
           var dispatcher = resolveDispatcher();
           return dispatcher.useRef(initialValue);
         }
-        function useEffect8(create, deps) {
+        function useEffect7(create, deps) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useEffect(create, deps);
         }
@@ -1884,7 +1884,7 @@ var require_react_development = __commonJS({
         exports.useContext = useContext11;
         exports.useDebugValue = useDebugValue;
         exports.useDeferredValue = useDeferredValue;
-        exports.useEffect = useEffect8;
+        exports.useEffect = useEffect7;
         exports.useId = useId4;
         exports.useImperativeHandle = useImperativeHandle;
         exports.useInsertionEffect = useInsertionEffect3;
@@ -2388,9 +2388,9 @@ var require_react_dom_development = __commonJS({
         if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
           __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
         }
-        var React14 = require_react();
+        var React15 = require_react();
         var Scheduler = require_scheduler();
-        var ReactSharedInternals = React14.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+        var ReactSharedInternals = React15.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
         var suppressWarning = false;
         function setSuppressWarning(newSuppressWarning) {
           {
@@ -3997,7 +3997,7 @@ var require_react_dom_development = __commonJS({
           {
             if (props.value == null) {
               if (typeof props.children === "object" && props.children !== null) {
-                React14.Children.forEach(props.children, function(child) {
+                React15.Children.forEach(props.children, function(child) {
                   if (child == null) {
                     return;
                   }
@@ -23593,7 +23593,7 @@ var require_react_jsx_runtime_development = __commonJS({
     if (true) {
       (function() {
         "use strict";
-        var React14 = require_react();
+        var React15 = require_react();
         var REACT_ELEMENT_TYPE = Symbol.for("react.element");
         var REACT_PORTAL_TYPE = Symbol.for("react.portal");
         var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
@@ -23619,7 +23619,7 @@ var require_react_jsx_runtime_development = __commonJS({
           }
           return null;
         }
-        var ReactSharedInternals = React14.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+        var ReactSharedInternals = React15.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
         function error(format) {
           {
             {
@@ -24497,7 +24497,7 @@ var require_classnames = __commonJS({
     (function() {
       "use strict";
       var hasOwn = {}.hasOwnProperty;
-      function classNames3() {
+      function classNames4() {
         var classes = "";
         for (var i = 0; i < arguments.length; i++) {
           var arg = arguments[i];
@@ -24515,7 +24515,7 @@ var require_classnames = __commonJS({
           return "";
         }
         if (Array.isArray(arg)) {
-          return classNames3.apply(null, arg);
+          return classNames4.apply(null, arg);
         }
         if (arg.toString !== Object.prototype.toString && !arg.toString.toString().includes("[native code]")) {
           return arg.toString();
@@ -24538,21 +24538,21 @@ var require_classnames = __commonJS({
         return value + newClass;
       }
       if (typeof module !== "undefined" && module.exports) {
-        classNames3.default = classNames3;
-        module.exports = classNames3;
+        classNames4.default = classNames4;
+        module.exports = classNames4;
       } else if (typeof define === "function" && typeof define.amd === "object" && define.amd) {
         define("classnames", [], function() {
-          return classNames3;
+          return classNames4;
         });
       } else {
-        window.classNames = classNames3;
+        window.classNames = classNames4;
       }
     })();
   }
 });
 
 // src/index.tsx
-var import_react32 = __toESM(require_react());
+var import_react33 = __toESM(require_react());
 var import_client = __toESM(require_client());
 
 // node_modules/react-router-dom/dist/index.js
@@ -26483,7 +26483,7 @@ function useViewTransitionState(to, opts) {
 }
 
 // src/routes/index.tsx
-var import_react31 = __toESM(require_react());
+var import_react32 = __toESM(require_react());
 
 // node_modules/framer-motion/dist/es/utils/warn-once.mjs
 var warned = /* @__PURE__ */ new Set();
@@ -34245,7 +34245,7 @@ var AnimatePresence = ({ children, exitBeforeEnter, custom, initial = true, onEx
 };
 
 // src/routes/main/index.tsx
-var import_react26 = __toESM(require_react());
+var import_react27 = __toESM(require_react());
 
 // src/components/box/index.tsx
 var import_react24 = __toESM(require_react());
@@ -34284,7 +34284,7 @@ var Box = (props) => {
     }
     return animations2[animationVariants];
   };
-  return /* @__PURE__ */ import_react24.default.createElement(motion.div, { key: animationKey, className: (0, import_classnames.default)(...getClasses()), ...getAnimation(), ...rest, transition: { duration: __transitionSpeed__ } }, children);
+  return /* @__PURE__ */ import_react24.default.createElement(motion.div, { key: animationKey, className: (0, import_classnames.default)(...getClasses()), ...getAnimation(), ...rest, transition: { duration: 0.5 } }, children);
 };
 var box_default = Box;
 
@@ -34317,66 +34317,101 @@ var Button = (props) => {
 };
 var button_default = Button;
 
+// src/components/menu/index.tsx
+var import_react26 = __toESM(require_react());
+var import_classnames3 = __toESM(require_classnames());
+
+// src/components/menu/styles.module.scss
+var styles_module_default3 = {
+  "wrapper": "_wrapper_dots0_1",
+  "item": "_item_dots0_12"
+};
+
+// src/components/menu/index.tsx
+var Menu = (props) => {
+  const { items } = props;
+  return /* @__PURE__ */ import_react26.default.createElement("ul", { className: (0, import_classnames3.default)(styles_module_default3.wrapper) }, items.map(({ id: id3, title, icon, onClick }) => /* @__PURE__ */ import_react26.default.createElement("li", { key: id3, onClick, className: styles_module_default3.item }, title)));
+};
+var menu_default = Menu;
+
+// src/utils/engineApi.ts
+var getModule = (name) => {
+  return Module[name];
+};
+var engineApi = {
+  setLocation(value) {
+    getModule("_SetLocation")(value);
+  }
+};
+var engineApi_default = engineApi;
+
 // src/routes/main/styles.module.scss
-var styles_module_default3 = {};
+var styles_module_default4 = {
+  "wrapper": "_wrapper_86r4c_1"
+};
 
 // src/routes/main/index.tsx
 var MainPage = () => {
-  const buttons = [
-    { id: 0, title: "\u0421\u0415\u0420\u0412\u0415\u0420\u042B", link: "/servers" },
-    { id: 1, title: "\u041D\u0410\u0421\u0422\u0420\u041E\u0419\u041A\u0418", link: "/settings" },
-    { id: 2, title: "\u0412\u042B\u0425\u041E\u0414", link: "/login" }
+  const navigate = useNavigate();
+  const transition = (path, location) => {
+    navigate(path);
+    engineApi_default.setLocation(location);
+  };
+  const menuItems = [
+    { id: 0, title: "\u0421\u0415\u0420\u0412\u0415\u0420\u042B", onClick: () => transition("/servers", 1) },
+    { id: 1, title: "\u041D\u0410\u0421\u0422\u0420\u041E\u0419\u041A\u0418", onClick: () => transition("/settings", 2) },
+    { id: 2, title: "\u0412\u042B\u0425\u041E\u0414", onClick: () => transition("/login", 3) }
   ];
-  return /* @__PURE__ */ import_react26.default.createElement(box_default, { className: styles_module_default3.wrapper, direction: "vertical", bg: true }, buttons.map(({ id: id3, title, link }) => /* @__PURE__ */ import_react26.default.createElement(button_default, { link, key: id3 }, title)));
+  return /* @__PURE__ */ import_react27.default.createElement(box_default, { className: styles_module_default4.wrapper, direction: "vertical" }, /* @__PURE__ */ import_react27.default.createElement(menu_default, { items: menuItems }));
 };
 var main_default = MainPage;
 
 // src/routes/settings/index.tsx
-var import_react30 = __toESM(require_react());
+var import_react31 = __toESM(require_react());
 
 // src/routes/settings/routes/index.tsx
-var import_react29 = __toESM(require_react());
+var import_react30 = __toESM(require_react());
 
 // src/routes/settings/routes/app/index.tsx
-var import_react27 = __toESM(require_react());
+var import_react28 = __toESM(require_react());
 
 // src/routes/settings/routes/app/styles.module.scss
-var styles_module_default4 = {
+var styles_module_default5 = {
   "wrapper": "_wrapper_1dz3y_1"
 };
 
 // src/routes/settings/routes/app/index.tsx
 var App = () => {
-  return /* @__PURE__ */ import_react27.default.createElement(box_default, { bg: true, className: styles_module_default4.wrapper }, "swdawdad");
+  return /* @__PURE__ */ import_react28.default.createElement(box_default, { bg: true, className: styles_module_default5.wrapper }, "swdawdad");
 };
 var app_default = App;
 
 // src/routes/settings/routes/viewer/index.tsx
-var import_react28 = __toESM(require_react());
+var import_react29 = __toESM(require_react());
 
 // src/routes/settings/routes/viewer/styles.module.scss
-var styles_module_default5 = {
+var styles_module_default6 = {
   "wrapper": "_wrapper_1has3_1"
 };
 
 // src/routes/settings/routes/viewer/index.tsx
 var Viewer = () => {
-  return /* @__PURE__ */ import_react28.default.createElement(box_default, { bg: true, className: styles_module_default5.wrapper }, "wd");
+  return /* @__PURE__ */ import_react29.default.createElement(box_default, { bg: true, className: styles_module_default6.wrapper }, "wd");
 };
 var viewer_default = Viewer;
 
 // src/routes/settings/routes/index.tsx
 var SettingsRoutes = () => {
   const routes = [
-    { id: 0, path: "/app", element: /* @__PURE__ */ import_react29.default.createElement(app_default, null) },
-    { id: 1, path: "/viewer", element: /* @__PURE__ */ import_react29.default.createElement(viewer_default, null) }
+    { id: 0, path: "/app", element: /* @__PURE__ */ import_react30.default.createElement(app_default, null) },
+    { id: 1, path: "/viewer", element: /* @__PURE__ */ import_react30.default.createElement(viewer_default, null) }
   ];
-  return /* @__PURE__ */ import_react29.default.createElement(AnimatePresence, { mode: "wait" }, /* @__PURE__ */ import_react29.default.createElement(Routes, null, routes.map(({ id: id3, path, element }) => /* @__PURE__ */ import_react29.default.createElement(Route, { key: id3, path, element: /* @__PURE__ */ import_react29.default.createElement(box_default, { animationVariants: "autoWidth" }, element) }))));
+  return /* @__PURE__ */ import_react30.default.createElement(AnimatePresence, { mode: "wait" }, /* @__PURE__ */ import_react30.default.createElement(Routes, null, routes.map(({ id: id3, path, element }) => /* @__PURE__ */ import_react30.default.createElement(Route, { key: id3, path, element: /* @__PURE__ */ import_react30.default.createElement(box_default, { animationVariants: "autoWidth" }, element) }))));
 };
 var routes_default = SettingsRoutes;
 
 // src/routes/settings/styles.module.scss
-var styles_module_default6 = {
+var styles_module_default7 = {
   "wrapper": "_wrapper_kpym1_1"
 };
 
@@ -34387,34 +34422,24 @@ var SettingsPage = () => {
     { id: 1, title: "\u0410\u041A\u041A\u0410\u0423\u041D\u0422", link: "viewer" },
     { id: 2, title: "\u0412\u0415\u0420\u041D\u0423\u0422\u0421\u042F \u0412 \u041C\u0415\u041D\u042E", link: "/main" }
   ];
-  return /* @__PURE__ */ import_react30.default.createElement(box_default, { className: styles_module_default6.wrapper }, /* @__PURE__ */ import_react30.default.createElement(box_default, { className: styles_module_default6.buttons, direction: "vertical", bg: true }, buttons.map(({ id: id3, title, link }) => /* @__PURE__ */ import_react30.default.createElement(button_default, { link, key: id3 }, title))), /* @__PURE__ */ import_react30.default.createElement(routes_default, null));
+  return /* @__PURE__ */ import_react31.default.createElement(box_default, { className: styles_module_default7.wrapper }, /* @__PURE__ */ import_react31.default.createElement(box_default, { className: styles_module_default7.buttons, direction: "vertical", bg: true }, buttons.map(({ id: id3, title, link }) => /* @__PURE__ */ import_react31.default.createElement(button_default, { link, key: id3 }, title))), /* @__PURE__ */ import_react31.default.createElement(routes_default, null));
 };
 var settings_default = SettingsPage;
 
 // src/routes/styles.module.scss
-var styles_module_default7 = {
+var styles_module_default8 = {
   "wrapper": "_wrapper_139ex_1"
 };
 
 // src/routes/index.tsx
 var MainRoutes = () => {
   const location = useLocation();
-  const currentMenu = {
-    "": 0,
-    "/main": 0,
-    "/settings": 1,
-    "/settings/app": 1.1,
-    "/settings/viewer": 1.2
-  };
-  (0, import_react31.useEffect)(() => {
-    __location__ = currentMenu[location.pathname.replace(/\/$/, "")];
-  }, [location.pathname]);
   const routes = [
-    { id: 0, path: "/", element: /* @__PURE__ */ import_react31.default.createElement(main_default, null) },
-    { id: 1, path: "/main", element: /* @__PURE__ */ import_react31.default.createElement(main_default, null) },
-    { id: 2, path: "/settings/*", element: /* @__PURE__ */ import_react31.default.createElement(settings_default, null) }
+    { id: 0, path: "/", element: /* @__PURE__ */ import_react32.default.createElement(main_default, null) },
+    { id: 1, path: "/main", element: /* @__PURE__ */ import_react32.default.createElement(main_default, null) },
+    { id: 2, path: "/settings/*", element: /* @__PURE__ */ import_react32.default.createElement(settings_default, null) }
   ];
-  return /* @__PURE__ */ import_react31.default.createElement(AnimatePresence, { mode: "wait", initial: false }, /* @__PURE__ */ import_react31.default.createElement(Routes, { location, key: location.pathname.split("/")[1] }, routes.map(({ id: id3, path, element }) => /* @__PURE__ */ import_react31.default.createElement(Route, { key: id3, path, element: /* @__PURE__ */ import_react31.default.createElement("div", { className: styles_module_default7.wrapper }, element) }))));
+  return /* @__PURE__ */ import_react32.default.createElement(AnimatePresence, { mode: "wait", initial: false }, /* @__PURE__ */ import_react32.default.createElement(Routes, { location, key: location.pathname.split("/")[1] }, routes.map(({ id: id3, path, element }) => /* @__PURE__ */ import_react32.default.createElement(Route, { key: id3, path, element: /* @__PURE__ */ import_react32.default.createElement("div", { className: styles_module_default8.wrapper }, element) }))));
 };
 var routes_default2 = MainRoutes;
 
@@ -34422,7 +34447,7 @@ var routes_default2 = MainRoutes;
 var rootElement = document.getElementById("root");
 var root = (0, import_client.createRoot)(rootElement);
 root.render(
-  /* @__PURE__ */ import_react32.default.createElement(BrowserRouter, null, /* @__PURE__ */ import_react32.default.createElement(routes_default2, null))
+  /* @__PURE__ */ import_react33.default.createElement(BrowserRouter, null, /* @__PURE__ */ import_react33.default.createElement(routes_default2, null))
 );
 /*! Bundled license information:
 

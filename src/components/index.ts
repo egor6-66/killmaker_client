@@ -1,4 +1,5 @@
 import Box from './box';
 import Button from './button';
+import Menu from './menu';
 
-export { Box, Button };
+export { Box, Button, Menu };
