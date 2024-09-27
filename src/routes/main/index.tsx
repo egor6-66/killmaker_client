@@ -1,23 +1,17 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 import { Box, Menu } from '@/components';
-import { engineApi } from '@/utils';
+import { useRoutesTransition } from '@/hooks';
 
 import styles from './styles.module.scss';
 
 const MainPage = () => {
-    const navigate = useNavigate();
-
-    const transition = (path: string, location: number) => {
-        navigate(path);
-        engineApi.setLocation(location);
-    };
+    const { setMainLocation } = useRoutesTransition();
 
     const menuItems = [
-        { id: 0, title: 'СЕРВЕРЫ', onClick: () => transition('/servers', 1) },
-        { id: 1, title: 'НАСТРОЙКИ', onClick: () => transition('/settings', 2) },
-        { id: 2, title: 'ВЫХОД', onClick: () => transition('/login', 3) },
+        { id: 0, title: 'СЕРВЕРЫ', onClick: () => setMainLocation('servers') },
+        { id: 1, title: 'НАСТРОЙКИ', onClick: () => setMainLocation('settings') },
+        { id: 2, title: 'ВЫХОД', onClick: () => setMainLocation('auth') },
     ];
 
     return (

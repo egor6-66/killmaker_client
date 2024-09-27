@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Mac\DsymExporter\DsymExporter.Target.cs" />
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Mac\DsymExporter\DsymExporter.Build.cs" />
+    <Filter Include="Private">
+      <UniqueIdentifier>{D1FA840A-2F9B-4470-BD98-23AA72E24516}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Mac\DsymExporter\Private\DsymExporterApp.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <Filter Include="Private\Mac">
+      <UniqueIdentifier>{EF7B1F1D-D08A-4DB4-A4F1-0F2C7FBBC8DD}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Mac\DsymExporter\Private\Mac\DsymExporterMainMac.cpp">
+      <Filter>Private\Mac</Filter>
+    </ClCompile>
+    <Filter Include="Public">
+      <UniqueIdentifier>{A8A5BE00-34D3-4AF6-B1E1-C1431D456AF2}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Mac\DsymExporter\Public\DsymExporterApp.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

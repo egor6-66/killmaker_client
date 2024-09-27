@@ -4,6 +4,7 @@ module.exports = {
         es2021: true,
         jest: true,
     },
+    ignorePatterns: ["/*", "!/src"],
     parser: '@typescript-eslint/parser',
     plugins: ['react', 'simple-import-sort', 'promise', 'sonarjs', 'unicorn'],
     parserOptions: {
@@ -11,7 +12,7 @@ module.exports = {
         ecmaVersion: 'latest',
     },
     settings: {
-        react: {
+        react: { 
             version: 'detect',
         },
     },

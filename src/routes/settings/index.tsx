@@ -1,26 +1,25 @@
 import React from 'react';
 
-import { Box, Button } from '@/components';
+import { Box, Menu } from '@/components';
+import { useRoutesTransition } from '@/hooks';
 
 import SettingsRoutes from './routes';
 
 import styles from './styles.module.scss';
 
 const SettingsPage = () => {
-    const buttons = [
-        { id: 0, title: 'ПРИЛОЖЕНИЕ', link: 'app' },
-        { id: 1, title: 'АККАУНТ', link: 'viewer' },
-        { id: 2, title: 'ВЕРНУТСЯ В МЕНЮ', link: '/main' },
+    const { setMainLocation } = useRoutesTransition();
+
+    const menuItems = [
+        { id: 0, title: 'ПРИЛОЖЕНИЕ', onClick: () => setMainLocation('main') },
+        { id: 1, title: 'АККАУНТ', onClick: () => setMainLocation('main') },
+        { id: 2, title: 'ВЕРНУТСЯ В МЕНЮ', onClick: () => setMainLocation('main') },
     ];
 
     return (
         <Box className={styles.wrapper}>
-            <Box className={styles.buttons} direction={'vertical'} bg>
-                {buttons.map(({ id, title, link }) => (
-                    <Button link={link} key={id}>
-                        {title}
-                    </Button>
-                ))}
+            <Box className={styles.nav} direction={'vertical'}>
+                <Menu items={menuItems} />
             </Box>
             <SettingsRoutes />
         </Box>

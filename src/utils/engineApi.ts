@@ -1,14 +1,15 @@
-type Modules = '_SetLocation';
+type Modules = '_SetMainLocation';
 
-const getModule = (name: Modules) => {
-    //@ts-ignore
-    return Module[name];
-};
+class engineApi {
+    getModule = (name: Modules) => {
+        //@ts-ignore
+        return Module[name];
+    };
 
-const engineApi = {
     setLocation(value: number) {
-        getModule('_SetLocation')(value);
-    },
-};
+        const module = this.getModule('_SetMainLocation');
+        module && module(value);
+    }
+}
 
-export default engineApi;
+export default new engineApi();

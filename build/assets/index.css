@@ -210,13 +210,18 @@ html {
 }
 
 /* esbuild-sass-plugin:css-chunk:src/routes/settings/styles.module.scss */
-._wrapper_kpym1_1 {
+._wrapper_1kz76_1 {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
+}
+._wrapper_1kz76_1 ._nav_1kz76_9 {
+  height: auto;
+  width: 100%;
+  max-width: 500px;
 }
 
 /* esbuild-sass-plugin:css-chunk:src/routes/styles.module.scss */

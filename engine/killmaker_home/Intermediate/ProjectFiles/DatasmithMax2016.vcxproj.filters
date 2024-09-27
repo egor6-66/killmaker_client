@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\DatasmithMax2016.Target.cs" />
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\DatasmithMax2016.Build.cs" />
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\DatasmithMax2017.Build.cs" />
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\DatasmithMax2018.Build.cs" />
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\DatasmithMax2019.Build.cs" />
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\DatasmithMax2020.Build.cs" />
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\DatasmithMax2021.Build.cs" />
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\DatasmithMax2022.Build.cs" />
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\DatasmithMaxExporter.def" />
+    <Filter Include="Extras">
+      <UniqueIdentifier>{F1EA6088-B827-41CF-BF20-A2F00E282FC6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extras\3dsMaxScripts">
+      <UniqueIdentifier>{FAFF884F-DC35-45BB-8B5E-C813BC2F35AE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Extras\3dsMaxScripts\UnrealStudio_Datasmith_Attributes_Holder_Modifier.ms">
+      <Filter>Extras\3dsMaxScripts</Filter>
+    </None>
+    <Filter Include="Installer">
+      <UniqueIdentifier>{9A6549A0-0623-471A-89AD-8047D892CE43}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\CustomActions.wxs">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\CustomExitDialog.wxs">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\CustomInstallDirDlg.wxs">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\CustomLicenseAgreementDlg.wxs">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\CustomWelcomeDialog.wxs">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\CustomWixUI_InstallDir.wxs">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\GenericUiBrandDialog.wxs">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Installer.wixproj">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\MaxExporter.wxs">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\ReadMe.txt">
+      <Filter>Installer</Filter>
+    </None>
+    <Filter Include="Installer\Localization">
+      <UniqueIdentifier>{5E4B9DA5-EF3A-48F2-A1E6-99FE37129210}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Localization\en-us.wxl">
+      <Filter>Installer\Localization</Filter>
+    </None>
+    <Filter Include="Installer\Resources">
+      <UniqueIdentifier>{ED2544C7-A083-420F-83E3-1558D4957746}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\Banner.bmp">
+      <Filter>Installer\Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\default_small_banner.bmp">
+      <Filter>Installer\Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\Dialog.bmp">
+      <Filter>Installer\Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\Exporter Plugin End User License Agreement.docx">
+      <Filter>Installer\Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\Exporter Plugin End User License Agreement.rtf">
+      <Filter>Installer\Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\Microsoft_VC140_CRT_x64.msm">
+      <Filter>Installer\Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\Microsoft_VC140_OpenMP_x64.msm">
+      <Filter>Installer\Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\UnrealEngine.ico">
+      <Filter>Installer\Resources</Filter>
+    </None>
+    <Filter Include="Installer\Resources\General">
+      <UniqueIdentifier>{EA14C699-51CA-4B65-8004-91FD1E6E829C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\General\banner.bmp">
+      <Filter>Installer\Resources\General</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\General\unreal-logo.jpg">
+      <Filter>Installer\Resources\General</Filter>
+    </None>
+    <Filter Include="Installer\Resources\Images">
+      <UniqueIdentifier>{7152A122-A99C-4C2E-8B39-9BAED9C85E6E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\Images\Epic_Games_logo.bmp">
+      <Filter>Installer\Resources\Images</Filter>
+    </None>
+    <Filter Include="Installer\Resources\Images\Background">
+      <UniqueIdentifier>{691F55DC-F7D9-4B9B-A561-99CF4333C9A8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\Images\Background\28190.bmp">
+      <Filter>Installer\Resources\Images\Background</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\Images\Background\28402.bmp">
+      <Filter>Installer\Resources\Images\Background</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\Images\Background\28674.bmp">
+      <Filter>Installer\Resources\Images\Background</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\Images\Background\30668.bmp">
+      <Filter>Installer\Resources\Images\Background</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\Images\Background\30725.bmp">
+      <Filter>Installer\Resources\Images\Background</Filter>
+    </None>
+    <Filter Include="Installer\Resources\Images\General">
+      <UniqueIdentifier>{BBD7BB68-1112-4DCF-9496-DF94D3DDC077}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\Images\General\banner.bmp">
+      <Filter>Installer\Resources\Images\General</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Installer\Resources\Images\General\unreal-logo.jpg">
+      <Filter>Installer\Resources\Images\General</Filter>
+    </None>
+    <Filter Include="Private">
+      <UniqueIdentifier>{ED614678-8206-485A-8D27-0DB4F4BCAFE5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxArnold.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxAttributes.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxAttributes.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxCameraExporter.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxCorona.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxExporter.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxHelper.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxLogger.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxMental.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxMeshExporter.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxProgressManager.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxScanline.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxSceneExporter.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxSceneParser.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxTexmapParser.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxTexmapParser.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxThea.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxVRay.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\DatasmithMaxWriter.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\VRayLights.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <Filter Include="Private\MaxMaterialsToUEPbr">
+      <UniqueIdentifier>{284D281C-06D7-49CD-9D8C-A2E2E557AC6B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\MaxMaterialsToUEPbr\DatasmithMaxCoronaMaterialsToUEPbr.cpp">
+      <Filter>Private\MaxMaterialsToUEPbr</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\MaxMaterialsToUEPbr\DatasmithMaxCoronaMaterialsToUEPbr.h">
+      <Filter>Private\MaxMaterialsToUEPbr</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\MaxMaterialsToUEPbr\DatasmithMaxCoronaTexmapToUEPbr.cpp">
+      <Filter>Private\MaxMaterialsToUEPbr</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\MaxMaterialsToUEPbr\DatasmithMaxCoronaTexmapToUEPbr.h">
+      <Filter>Private\MaxMaterialsToUEPbr</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\MaxMaterialsToUEPbr\DatasmithMaxMaterialsToUEPbr.cpp">
+      <Filter>Private\MaxMaterialsToUEPbr</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\MaxMaterialsToUEPbr\DatasmithMaxMaterialsToUEPbr.h">
+      <Filter>Private\MaxMaterialsToUEPbr</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\MaxMaterialsToUEPbr\DatasmithMaxScanlineMaterialsToUEPbr.cpp">
+      <Filter>Private\MaxMaterialsToUEPbr</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\MaxMaterialsToUEPbr\DatasmithMaxScanlineMaterialsToUEPbr.h">
+      <Filter>Private\MaxMaterialsToUEPbr</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\MaxMaterialsToUEPbr\DatasmithMaxTexmapToUEPbr.cpp">
+      <Filter>Private\MaxMaterialsToUEPbr</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\MaxMaterialsToUEPbr\DatasmithMaxTexmapToUEPbr.h">
+      <Filter>Private\MaxMaterialsToUEPbr</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\MaxMaterialsToUEPbr\DatasmithMaxVrayMaterialsToUEPbr.cpp">
+      <Filter>Private\MaxMaterialsToUEPbr</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\MaxMaterialsToUEPbr\DatasmithMaxVrayMaterialsToUEPbr.h">
+      <Filter>Private\MaxMaterialsToUEPbr</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\MaxMaterialsToUEPbr\DatasmithMaxVRayTexmapToUEPbr.cpp">
+      <Filter>Private\MaxMaterialsToUEPbr</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Private\MaxMaterialsToUEPbr\DatasmithMaxVRayTexmapToUEPbr.h">
+      <Filter>Private\MaxMaterialsToUEPbr</Filter>
+    </ClInclude>
+    <Filter Include="Public">
+      <UniqueIdentifier>{F97A516F-C0E2-4A25-8A17-AFBDE775D337}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Public\DatasmithMaxCameraExporter.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Public\DatasmithMaxClassIDs.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Public\DatasmithMaxExporter.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Public\DatasmithMaxExporterDefines.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Public\DatasmithMaxHelper.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Public\DatasmithMaxLogger.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Public\DatasmithMaxMeshExporter.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Public\DatasmithMaxProgressManager.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Public\DatasmithMaxSceneExporter.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Public\DatasmithMaxSceneParser.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Public\DatasmithMaxWriter.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{078D4946-F390-42A1-80D1-DC1B6F69D282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Windows">
+      <UniqueIdentifier>{48D04AE2-793B-49D4-8451-7C192AEC4CF0}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Resources\Windows\Resource.aps">
+      <Filter>Resources\Windows</Filter>
+    </None>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Resources\Windows\resource.h">
+      <Filter>Resources\Windows</Filter>
+    </ClInclude>
+    <ResourceCompile Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Resources\Windows\Resource.rc">
+      <Filter>Resources\Windows</Filter>
+    </ResourceCompile>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\Resources\Windows\UE4.ico">
+      <Filter>Resources\Windows</Filter>
+    </None>
+    <Filter Include="ThirdParty">
+      <UniqueIdentifier>{A2B8A376-5B19-4781-ACC7-A9F8C052AB76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\Itoo">
+      <UniqueIdentifier>{77726C3E-82D5-4FA3-A29B-8E7BD67BFC51}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\ThirdParty\Itoo\forestitreesinterface.h">
+      <Filter>ThirdParty\Itoo</Filter>
+    </ClInclude>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\ThirdParty\Itoo\ForestPackRailcloneAPI.tps">
+      <Filter>ThirdParty\Itoo</Filter>
+    </None>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\ThirdParty\Itoo\ircinterface.h">
+      <Filter>ThirdParty\Itoo</Filter>
+    </ClInclude>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\ThirdParty\Itoo\Itoo.Build.cs">
+      <Filter>ThirdParty\Itoo</Filter>
+    </None>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithMaxExporter\ThirdParty\Itoo\itreesinterface.H">
+      <Filter>ThirdParty\Itoo</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

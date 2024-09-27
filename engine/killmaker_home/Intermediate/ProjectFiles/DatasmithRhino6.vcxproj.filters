@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\DatasmithRhino6.Target.cs" />
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\DatasmithRhino6.Build.cs" />
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\DatasmithRhino7.Build.cs" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{64219686-86D3-46C8-9456-F21B40C7F30B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Config\DatasmithRhino.rhp.config">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Config\Notarization.entitlements">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="DatasmithRhino6">
+      <UniqueIdentifier>{BD6C1F84-A8F7-487F-B902-DB238638E9A2}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\DatasmithRhino6\DatasmithRhino6.cs">
+      <Filter>DatasmithRhino6</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\DatasmithRhino6\DatasmithRhino6.csproj.save">
+      <Filter>DatasmithRhino6</Filter>
+    </None>
+    <Filter Include="DatasmithRhino7">
+      <UniqueIdentifier>{AD42C25B-763E-4096-94AC-EA245EE82DFA}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\DatasmithRhino7\DatasmithRhino7.cs">
+      <Filter>DatasmithRhino7</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\DatasmithRhino7\DatasmithRhino7.csproj.save">
+      <Filter>DatasmithRhino7</Filter>
+    </None>
+    <Filter Include="Installer">
+      <UniqueIdentifier>{EB85CE42-425C-4C57-9B79-D7A62E8B595D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\CreateMacPackages.sh">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\CreateMultilanguageInstaller.bat">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\CreateMultilanguageInstaller.py">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\CustomActions.wxs">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\CustomExitDialog.wxs">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\CustomInstallDirDlg.wxs">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\CustomLicenseAgreementDlg.wxs">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\CustomWelcomeDialog.wxs">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\CustomWixUI_InstallDir.wxs">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\GenericUiBrandDialog.wxs">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Installer.wixproj">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\ReadMe.txt">
+      <Filter>Installer</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\RhinoExporter.wxs">
+      <Filter>Installer</Filter>
+    </None>
+    <Filter Include="Installer\Localization">
+      <UniqueIdentifier>{F737CE2F-BA2D-4B0F-8412-5BA1554BE17F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Localization\de-de.wxl">
+      <Filter>Installer\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Localization\en-us.wxl">
+      <Filter>Installer\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Localization\es-es.wxl">
+      <Filter>Installer\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Localization\fr-fr.wxl">
+      <Filter>Installer\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Localization\ja-jp.wxl">
+      <Filter>Installer\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Localization\ko-kr.wxl">
+      <Filter>Installer\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Localization\pt-br.wxl">
+      <Filter>Installer\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Localization\UtilExtension_es-es.wxl">
+      <Filter>Installer\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Localization\UtilExtension_fr-fr.wxl">
+      <Filter>Installer\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Localization\UtilExtension_ja-jp.wxl">
+      <Filter>Installer\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Localization\UtilExtension_ko-kr.wxl">
+      <Filter>Installer\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Localization\UtilExtension_pt-br.wxl">
+      <Filter>Installer\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Localization\UtilExtension_zh-cn.wxl">
+      <Filter>Installer\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Localization\zh-cn.wxl">
+      <Filter>Installer\Localization</Filter>
+    </None>
+    <Filter Include="Installer\Resources">
+      <UniqueIdentifier>{E96642BF-42FD-4AB2-89CC-BA8AA4C3DC17}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\Banner.bmp">
+      <Filter>Installer\Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\default_small_banner.bmp">
+      <Filter>Installer\Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\Dialog.bmp">
+      <Filter>Installer\Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\Exporter Plugin End User License Agreement.docx">
+      <Filter>Installer\Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\Exporter Plugin End User License Agreement.rtf">
+      <Filter>Installer\Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\Microsoft_VC140_CRT_x64.msm">
+      <Filter>Installer\Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\Microsoft_VC140_OpenMP_x64.msm">
+      <Filter>Installer\Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\UnrealEngine.ico">
+      <Filter>Installer\Resources</Filter>
+    </None>
+    <Filter Include="Installer\Resources\General">
+      <UniqueIdentifier>{1EC206CC-563A-4B06-92BA-255BFB1BC16C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\General\banner.bmp">
+      <Filter>Installer\Resources\General</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\General\unreal-logo.jpg">
+      <Filter>Installer\Resources\General</Filter>
+    </None>
+    <Filter Include="Installer\Resources\Images">
+      <UniqueIdentifier>{9F7D6789-633E-4986-89D1-A35633EA9E22}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\Images\Epic_Games_logo.bmp">
+      <Filter>Installer\Resources\Images</Filter>
+    </None>
+    <Filter Include="Installer\Resources\Images\Background">
+      <UniqueIdentifier>{31C29517-6A0D-424A-BB3A-8E17C2CB51F0}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\Images\Background\28190.bmp">
+      <Filter>Installer\Resources\Images\Background</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\Images\Background\28402.bmp">
+      <Filter>Installer\Resources\Images\Background</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\Images\Background\28674.bmp">
+      <Filter>Installer\Resources\Images\Background</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\Images\Background\30668.bmp">
+      <Filter>Installer\Resources\Images\Background</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\Images\Background\30725.bmp">
+      <Filter>Installer\Resources\Images\Background</Filter>
+    </None>
+    <Filter Include="Installer\Resources\Images\General">
+      <UniqueIdentifier>{8820F568-AB1E-46D8-A6FC-E8FBD7FEB81C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\Images\General\banner.bmp">
+      <Filter>Installer\Resources\Images\General</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Installer\Resources\Images\General\unreal-logo.jpg">
+      <Filter>Installer\Resources\Images\General</Filter>
+    </None>
+    <Filter Include="Private">
+      <UniqueIdentifier>{7EECF1C7-7391-4F20-9FF4-D29FDBF0DEBD}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\DatasmithRhinoExportContext.cs">
+      <Filter>Private</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\DatasmithRhinoExportOptions.cs">
+      <Filter>Private</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\DatasmithRhinoPlugin.cs">
+      <Filter>Private</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\DatasmithRhinoSceneExporter.cs">
+      <Filter>Private</Filter>
+    </None>
+    <Filter Include="Private\Commands">
+      <UniqueIdentifier>{CD40772D-909A-46E9-A11F-F1604B93D862}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\Commands\DatasmithDirectLinkConnectionsCommand.cs">
+      <Filter>Private\Commands</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\Commands\DatasmithDirectLinkSyncCommand.cs">
+      <Filter>Private\Commands</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\Commands\DatasmithExportCommand.cs">
+      <Filter>Private\Commands</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\Commands\DatasmithMessagesCommand.cs">
+      <Filter>Private\Commands</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\Commands\DatasmithToggleAutoSyncCommand.cs">
+      <Filter>Private\Commands</Filter>
+    </None>
+    <Filter Include="Private\DirectLink">
+      <UniqueIdentifier>{AA921899-DCED-4648-8FE0-F6B1776A80F0}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\DirectLink\DatasmithRhinoChangeListener.cs">
+      <Filter>Private\DirectLink</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\DirectLink\DatasmithRhinoDirectLinkManager.cs">
+      <Filter>Private\DirectLink</Filter>
+    </None>
+    <Filter Include="Private\ElementExporters">
+      <UniqueIdentifier>{1CFF8D2C-E118-4857-B8B5-52C30EE1BD25}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\ElementExporters\DatasmithRhinoActorExporter.cs">
+      <Filter>Private\ElementExporters</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\ElementExporters\DatasmithRhinoMaterialExporter.cs">
+      <Filter>Private\ElementExporters</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\ElementExporters\DatasmithRhinoMeshExporter.cs">
+      <Filter>Private\ElementExporters</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\ElementExporters\DatasmithRhinoTextureExporter.cs">
+      <Filter>Private\ElementExporters</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\ElementExporters\IDatasmithRhinoElementExporter.cs">
+      <Filter>Private\ElementExporters</Filter>
+    </None>
+    <Filter Include="Private\Utils">
+      <UniqueIdentifier>{298CF549-14CE-44FC-972A-801DF4865722}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\Utils\DatasmithRhinoLogManager.cs">
+      <Filter>Private\Utils</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\Utils\DatasmithRhinoProgressManager.cs">
+      <Filter>Private\Utils</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\Utils\DatasmithRhinoUniqueNameGenerator.cs">
+      <Filter>Private\Utils</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Private\Utils\DatasmithRhinoUtilities.cs">
+      <Filter>Private\Utils</Filter>
+    </None>
+    <Filter Include="Properties">
+      <UniqueIdentifier>{A33EFBAD-079D-4B77-B9E2-A34539F72C56}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Properties\DefaultAssemblyInfo.cs">
+      <Filter>Properties</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\Properties\GeneratedAssemblyInfo.cs.template">
+      <Filter>Properties</Filter>
+    </None>
+    <Filter Include="SharedResources">
+      <UniqueIdentifier>{9FE5B25B-18EF-436B-80DD-225FAF915B47}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\DatasmithRhino.plist">
+      <Filter>SharedResources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\DatasmithRhino.rui">
+      <Filter>SharedResources</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\UnrealEngine.ico">
+      <Filter>SharedResources</Filter>
+    </None>
+    <Filter Include="SharedResources\Localization">
+      <UniqueIdentifier>{3BB7885B-0BB8-4396-8EE6-B89FEA058E3A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\Localization\Resources.de.Designer.cs">
+      <Filter>SharedResources\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\Localization\Resources.de.resx">
+      <Filter>SharedResources\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\Localization\Resources.Designer.cs">
+      <Filter>SharedResources\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\Localization\Resources.es.Designer.cs">
+      <Filter>SharedResources\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\Localization\Resources.es.resx">
+      <Filter>SharedResources\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\Localization\Resources.fr.Designer.cs">
+      <Filter>SharedResources\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\Localization\Resources.fr.resx">
+      <Filter>SharedResources\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\Localization\Resources.ja.Designer.cs">
+      <Filter>SharedResources\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\Localization\Resources.ja.resx">
+      <Filter>SharedResources\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\Localization\Resources.ko.Designer.cs">
+      <Filter>SharedResources\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\Localization\Resources.ko.resx">
+      <Filter>SharedResources\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\Localization\Resources.pt.Designer.cs">
+      <Filter>SharedResources\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\Localization\Resources.pt.resx">
+      <Filter>SharedResources\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\Localization\Resources.resx">
+      <Filter>SharedResources\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\Localization\Resources.zh.Designer.cs">
+      <Filter>SharedResources\Localization</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\..\..\UNREAL\4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithRhinoExporter\SharedResources\Localization\Resources.zh.resx">
+      <Filter>SharedResources\Localization</Filter>
+    </None>
+  </ItemGroup>
+</Project>
