@@ -1,10 +1,6 @@
 HTML5
+build
 node_modules
 .idea
-engine/Content
-engine/Intermediate
-engine/Binaries
-engine/Config
-engine/Saved
-engine/.vs
-engine/.idea
+engine/killmaker_home/.idea
+engine/killmaker_home/.idea
