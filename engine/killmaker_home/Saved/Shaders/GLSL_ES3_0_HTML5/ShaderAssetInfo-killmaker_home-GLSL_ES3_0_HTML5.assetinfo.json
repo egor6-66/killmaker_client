@@ -184,9 +184,34 @@
 			]
 		},
 		{
-			"ShaderMapHash": "688214C19504819068BB89011A089D9950118A2B",
+			"ShaderMapHash": "F8AE77EE96CAB2A1ADFFCDE53652B992E1105195",
 			"Assets": [
-				"/Engine/EngineDebugMaterials/DebugEditorMaterial"
+				"/Game/models/tables/gaming-table/source/mat"
+			]
+		},
+		{
+			"ShaderMapHash": "4DC2DA9FB3DBE3A3EA8E88FB55310CFC31246842",
+			"Assets": [
+				"/Game/models/servers/server-cpu/source/mat"
+			]
+		},
+		{
+			"ShaderMapHash": "30865CE095120B8389D8FE0FCD947572BBCCAC85",
+			"Assets": [
+				"/Game/models/servers/sci-fi-servers/source/mat"
+			]
+		},
+		{
+			"ShaderMapHash": "A1FD413A38B3DC7CE0999889588F9FF0BA60FC19",
+			"Assets": [
+				"/Game/models/servers/internet-server/source/mat"
+			]
+		},
+		{
+			"ShaderMapHash": "9D4AE45EF240F1AE83E0CA1F5CAFE352401E7B4F",
+			"Assets": [
+				"/Game/materials/concrete/1/concrete1",
+				"/Game/materials/bricks/1/mat"
 			]
 		},
 		{
@@ -198,7 +223,19 @@
 		{
 			"ShaderMapHash": "4BC9C8A8EBB7A4A415C216E5BD62C4660164E719",
 			"Assets": [
-				"/Game/main"
+				"/Game/lvl/main"
+			]
+		},
+		{
+			"ShaderMapHash": "688214C19504819068BB89011A089D9950118A2B",
+			"Assets": [
+				"/Engine/EngineDebugMaterials/DebugEditorMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "9374B7F0CEEEB5C8CF8F25FEDD947338D75850CC",
+			"Assets": [
+				"/Game/materials/stickers/graffiti/base"
 			]
 		}
 	]

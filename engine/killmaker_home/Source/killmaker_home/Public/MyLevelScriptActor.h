@@ -18,8 +18,8 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintImplementableEvent)
-	void SetLocation(int32 Value);
+	void SetLocation(float Value);
 };
 
-static int32 Location;
+static float Location;
 

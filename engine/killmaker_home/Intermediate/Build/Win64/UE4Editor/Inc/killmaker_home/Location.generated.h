@@ -16,14 +16,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define killmaker_home_Source_killmaker_home_Public_Location_h_10_SPARSE_DATA
 #define killmaker_home_Source_killmaker_home_Public_Location_h_10_RPC_WRAPPERS
 #define killmaker_home_Source_killmaker_home_Public_Location_h_10_RPC_WRAPPERS_NO_PURE_DECLS
-#define killmaker_home_Source_killmaker_home_Public_Location_h_10_EVENT_PARMS \
-	struct Location_eventSetLocation_Parms \
-	{ \
-		int32 Value; \
-	};
-
-
-#define killmaker_home_Source_killmaker_home_Public_Location_h_10_CALLBACK_WRAPPERS
 #define killmaker_home_Source_killmaker_home_Public_Location_h_10_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesALocation(); \
@@ -67,17 +59,13 @@ public: \
 
 
 #define killmaker_home_Source_killmaker_home_Public_Location_h_10_PRIVATE_PROPERTY_OFFSET
-#define killmaker_home_Source_killmaker_home_Public_Location_h_7_PROLOG \
-	killmaker_home_Source_killmaker_home_Public_Location_h_10_EVENT_PARMS
-
-
+#define killmaker_home_Source_killmaker_home_Public_Location_h_7_PROLOG
 #define killmaker_home_Source_killmaker_home_Public_Location_h_10_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	killmaker_home_Source_killmaker_home_Public_Location_h_10_PRIVATE_PROPERTY_OFFSET \
 	killmaker_home_Source_killmaker_home_Public_Location_h_10_SPARSE_DATA \
 	killmaker_home_Source_killmaker_home_Public_Location_h_10_RPC_WRAPPERS \
-	killmaker_home_Source_killmaker_home_Public_Location_h_10_CALLBACK_WRAPPERS \
 	killmaker_home_Source_killmaker_home_Public_Location_h_10_INCLASS \
 	killmaker_home_Source_killmaker_home_Public_Location_h_10_STANDARD_CONSTRUCTORS \
 public: \
@@ -90,7 +78,6 @@ public: \
 	killmaker_home_Source_killmaker_home_Public_Location_h_10_PRIVATE_PROPERTY_OFFSET \
 	killmaker_home_Source_killmaker_home_Public_Location_h_10_SPARSE_DATA \
 	killmaker_home_Source_killmaker_home_Public_Location_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
-	killmaker_home_Source_killmaker_home_Public_Location_h_10_CALLBACK_WRAPPERS \
 	killmaker_home_Source_killmaker_home_Public_Location_h_10_INCLASS_NO_PURE_DECLS \
 	killmaker_home_Source_killmaker_home_Public_Location_h_10_ENHANCED_CONSTRUCTORS \
 private: \

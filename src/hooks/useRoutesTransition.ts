@@ -3,58 +3,55 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 import { engineApi } from '@/utils';
 
-type MainRoute = 'auth' | 'main' | 'settings' | 'servers';
-type SubRoute = 'auth' | 'main' | 'settings' | 'servers';
+type Routes = Record<string, { path: string; index: number }>;
 
 function useRoutesTransition() {
     const navigate = useNavigate();
     const location = useLocation();
 
-    const mainRoutes: Record<MainRoute, { path: string; index: number }> = {
-        auth: {
-            path: '/auth',
-            index: 0,
-        },
-        main: {
-            path: '/main',
-            index: 1,
-        },
-        servers: {
-            path: '/servers',
-            index: 2,
-        },
-        settings: {
-            path: '/settings',
-            index: 3,
-        },
+    const authRoutes: Routes = {
+        auth: { path: '/auth', index: 0 },
+        registration: { path: '/auth/registration', index: 0.1 },
+        login: { path: '/auth/login', index: 0.2 },
+    };
+
+    const mainRoutes: Routes = {
+        main: { path: '/main', index: 1 },
+    };
+
+    const settingsRoutes: Routes = {
+        settings: { path: '/settings', index: 2 },
+    };
+
+    const serversRoutes: Routes = {
+        servers: { path: '/servers', index: 3 },
+        findServers: { path: '/servers/find_servers', index: 3.1 },
+        createServer: { path: '/servers/create_server', index: 3.2 },
+        localGame: { path: '/servers/local_game', index: 3.3 },
+    };
+
+    const allRoutes = {
+        ...authRoutes,
+        ...mainRoutes,
+        ...settingsRoutes,
+        ...serversRoutes,
     };
 
     useEffect(() => {
-        if (location.pathname) {
-            const [root, main, sub] = location.pathname.split('/');
-
-            if (!main && !sub) {
-                engineApi.setLocation(mainRoutes['main'].index);
+        Object.values(allRoutes).forEach((val) => {
+            if (val.path === location.pathname.replace(/\/$/, '')) {
+                engineApi.setLocation(val.index);
             }
-
-            if (main && main in mainRoutes) {
-                console.log('wdadwd');
-                engineApi.setLocation(mainRoutes[main].index);
-            }
-
-            if (sub && sub in mainRoutes) {
-                // engineApi.setLocation(mainRoutes[main].index);
-            }
-        }
+        });
     }, []);
 
-    const setMainLocation = (route: MainRoute) => {
-        const target = mainRoutes[route];
+    const setLocation = (route: keyof typeof allRoutes) => {
+        const target = allRoutes[route];
         navigate(target.path);
         engineApi.setLocation(target.index);
     };
 
-    return { setMainLocation };
+    return { setLocation };
 }
 
 export default useRoutesTransition;

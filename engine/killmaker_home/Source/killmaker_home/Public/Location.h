@@ -17,8 +17,6 @@ protected:
 
 public:
 	virtual void Tick(float DeltaTime) override;
-	UFUNCTION(BlueprintImplementableEvent)
-	void SetLocation(int32 Value);
 };
 
-static int32 Location;
+static float Location;

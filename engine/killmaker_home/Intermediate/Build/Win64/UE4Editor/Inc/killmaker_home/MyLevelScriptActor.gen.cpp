@@ -19,7 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeMyLevelScriptActor() {}
 	UPackage* Z_Construct_UPackage__Script_killmaker_home();
 // End Cross Module References
 	static FName NAME_AMyLevelScriptActor_SetLocation = FName(TEXT("SetLocation"));
-	void AMyLevelScriptActor::SetLocation(int32 Value)
+	void AMyLevelScriptActor::SetLocation(float Value)
 	{
 		MyLevelScriptActor_eventSetLocation_Parms Parms;
 		Parms.Value=Value;
@@ -30,14 +30,14 @@ void EmptyLinkFunctionForGeneratedCodeMyLevelScriptActor() {}
 	}
 	struct Z_Construct_UFunction_AMyLevelScriptActor_SetLocation_Statics
 	{
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_Value;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Value;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AMyLevelScriptActor_SetLocation_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MyLevelScriptActor_eventSetLocation_Parms, Value), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AMyLevelScriptActor_SetLocation_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MyLevelScriptActor_eventSetLocation_Parms, Value), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMyLevelScriptActor_SetLocation_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMyLevelScriptActor_SetLocation_Statics::NewProp_Value,
 	};
@@ -75,7 +75,7 @@ void EmptyLinkFunctionForGeneratedCodeMyLevelScriptActor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_killmaker_home,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMyLevelScriptActor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMyLevelScriptActor_SetLocation, "SetLocation" }, // 3375373675
+		{ &Z_Construct_UFunction_AMyLevelScriptActor_SetLocation, "SetLocation" }, // 355874431
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyLevelScriptActor_Statics::Class_MetaDataParams[] = {
@@ -111,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeMyLevelScriptActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyLevelScriptActor, 3438073759);
+	IMPLEMENT_CLASS(AMyLevelScriptActor, 696795280);
 	template<> KILLMAKER_HOME_API UClass* StaticClass<AMyLevelScriptActor>()
 	{
 		return AMyLevelScriptActor::StaticClass();

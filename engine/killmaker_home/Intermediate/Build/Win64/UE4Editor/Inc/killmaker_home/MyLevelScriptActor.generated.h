@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define killmaker_home_Source_killmaker_home_Public_MyLevelScriptActor_h_10_EVENT_PARMS \
 	struct MyLevelScriptActor_eventSetLocation_Parms \
 	{ \
-		int32 Value; \
+		float Value; \
 	};
 
 

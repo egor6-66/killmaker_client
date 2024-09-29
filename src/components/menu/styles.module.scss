@@ -16,6 +16,7 @@
     cursor: pointer;
     border: 1px solid var(--border-secondary);
     will-change: transform;
+    box-shadow: var(--box-shadow);
 
     &:hover {
       transform: scale(0.98);

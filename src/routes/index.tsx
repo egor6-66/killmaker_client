@@ -2,7 +2,9 @@ import React from 'react';
 import { Route, Routes as RRDRoutes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
+import AuthPage from './auth';
 import MainPage from './main';
+import ServersPage from './servers';
 import SettingsPage from './settings';
 
 import styles from './styles.module.scss';
@@ -11,9 +13,10 @@ const MainRoutes = () => {
     const location = useLocation();
 
     const routes = [
-        { id: 0, path: '/', element: <MainPage /> },
-        { id: 1, path: '/main', element: <MainPage /> },
-        { id: 2, path: '/settings/*', element: <SettingsPage /> },
+        { id: 0, path: '/auth/*', element: <AuthPage /> },
+        { id: 1, path: '/main' || '/', element: <MainPage /> },
+        { id: 2, path: '/servers/*', element: <ServersPage /> },
+        { id: 3, path: '/settings/*', element: <SettingsPage /> },
     ];
 
     return (

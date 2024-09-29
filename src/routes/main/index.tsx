@@ -6,12 +6,12 @@ import { useRoutesTransition } from '@/hooks';
 import styles from './styles.module.scss';
 
 const MainPage = () => {
-    const { setMainLocation } = useRoutesTransition();
+    const { setLocation } = useRoutesTransition();
 
     const menuItems = [
-        { id: 0, title: 'СЕРВЕРЫ', onClick: () => setMainLocation('servers') },
-        { id: 1, title: 'НАСТРОЙКИ', onClick: () => setMainLocation('settings') },
-        { id: 2, title: 'ВЫХОД', onClick: () => setMainLocation('auth') },
+        { id: 0, title: 'СЕРВЕРЫ', onClick: () => setLocation('servers') },
+        { id: 1, title: 'НАСТРОЙКИ', onClick: () => setLocation('settings') },
+        { id: 2, title: 'ВЫХОД', onClick: () => setLocation('auth') },
     ];
 
     return (

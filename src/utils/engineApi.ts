@@ -1,4 +1,4 @@
-type Modules = '_SetMainLocation';
+type Modules = '_SetMainLocation' | '_SetSubLocation';
 
 class engineApi {
     getModule = (name: Modules) => {

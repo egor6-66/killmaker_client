@@ -29,7 +29,7 @@ void AMyLevelScriptActor::Tick(float DeltaTime)
 	}
 }
 
-#ifdef __EMSCRIPTEN__
+#ifdef __EMSCRIPTEN__ 
 EXTERN	EMSCRIPTEN_KEEPALIVE
 #endif
-void SetMainLocation(int32 value) { Location = value; };
+void SetMainLocation(float value) { Location = value; };

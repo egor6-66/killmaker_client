@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodekillmaker_home_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xF3DF8853,
+				0xD4E75F3F,
 				0xF575D01D,
 				METADATA_PARAMS(nullptr, 0)
 			};
