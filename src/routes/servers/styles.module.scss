@@ -10,7 +10,7 @@
 
   .nav {
     @include mixins.box-size(100%, auto);
-    max-width: 500px;
+    max-width: 30%;
   }
 }
 

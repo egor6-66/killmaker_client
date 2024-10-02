@@ -1,4 +1,4 @@
-type Modules = '_SetMainLocation' | '_SetSubLocation';
+type Modules = '_SetLocation' | '_SetAuth';
 
 class engineApi {
     getModule = (name: Modules) => {
@@ -7,7 +7,12 @@ class engineApi {
     };
 
     setLocation(value: number) {
-        const module = this.getModule('_SetMainLocation');
+        const module = this.getModule('_SetLocation');
+        module && module(value);
+    }
+
+    setAuth(value: number) {
+        const module = this.getModule('_SetAuth');
         module && module(value);
     }
 }

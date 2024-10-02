@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes as RRDRoutes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import { Box } from '@/components';
@@ -10,6 +10,8 @@ import FindServers from './find-servers';
 import LocalGame from './local-game';
 
 const ServersRoutes = () => {
+    const location = useLocation();
+
     const routes = [
         { id: 0, path: '/create_server', element: <CreateServer /> },
         { id: 1, path: '/find_servers', element: <FindServers /> },
@@ -18,11 +20,19 @@ const ServersRoutes = () => {
 
     return (
         <AnimatePresence mode={'wait'}>
-            <RRDRoutes>
+            <Routes location={location} key={location.pathname.split('/')[1]}>
                 {routes.map(({ id, path, element }) => (
-                    <Route key={id} path={path} element={<Box animationVariants={'autoWidth'}>{element}</Box>} />
+                    <Route
+                        key={id}
+                        path={path}
+                        element={
+                            <Box className={styles.wrapper} animationVariants={'autoWidth'}>
+                                {element}
+                            </Box>
+                        }
+                    />
                 ))}
-            </RRDRoutes>
+            </Routes>
         </AnimatePresence>
     );
 };

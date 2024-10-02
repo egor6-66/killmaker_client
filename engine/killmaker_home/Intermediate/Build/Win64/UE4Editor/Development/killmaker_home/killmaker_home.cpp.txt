@@ -1,2 +1,0 @@
-D:\CODING\projects\my\browser_js\killmaker\home\engine\killmaker_home\Intermediate\Build\Win64\UE4Editor\Development\killmaker_home\Definitions.killmaker_home.h
-D:\CODING\projects\my\browser_js\killmaker\home\engine\killmaker_home\Source\killmaker_home\killmaker_home.h

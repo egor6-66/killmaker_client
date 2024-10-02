@@ -16,11 +16,14 @@
 <script>
   function wasmLoaded(){
     const script = document.createElement('script');
-    script.src = './assets/bootstrap.js';
-    document.body.appendChild(script);
-    setTimeout(()=> {
-      document.getElementById('mainLoader').remove()
-    },500)
+    if(!document.getElementById('bootstrap')){
+      script.src = './assets/bootstrap.js';
+      script.id = 'bootstrap';
+      document.body.appendChild(script);
+      setTimeout(()=> {
+        document.getElementById('mainLoader').remove()
+      },500)
+    }
   }
 </script>
 <div id="mainLoader" style="width: 100%; height: 100vh; background-color: #2b542c; position: fixed; z-index: 2; top: 0; left: 0;">
