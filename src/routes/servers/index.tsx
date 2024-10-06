@@ -1,30 +1,56 @@
-import React from 'react';
+import React, { useMemo } from 'react';
+import { RouteProps, useNavigate } from 'react-router-dom';
 
-import { Box, Menu } from '@/components';
+import { Box, IMenu, Menu, PageLayout } from '@/components';
 import { useRoutesTransition } from '@/hooks';
+import Login from '@/routes/auth/routes/login';
+import { engineApi } from '@/utils';
 
-import ServersRoutes from './routes';
+import { CreateServer, FindServers, LocalGame } from './routes';
 
 import styles from './styles.module.scss';
 
 const ServersPage = () => {
-    const { setLocation } = useRoutesTransition();
+    const navigate = useNavigate();
 
-    const menuItems = [
-        { id: 0, title: 'ПОИСК СЕРВЕРОВ', onClick: () => setLocation('findServers') },
-        { id: 1, title: 'СОЗДАТЬ СЕРВЕР', onClick: () => setLocation('createServer') },
-        { id: 2, title: 'ЛОКАЛЬНАЯ ИГРА', onClick: () => setLocation('localGame') },
-        { id: 3, title: 'ВЕРНУТСЯ В МЕНЮ', onClick: () => setLocation('main') },
-    ];
+    const { menuItems, routes } = useMemo(() => {
+        let activeId = 2.0;
 
-    return (
-        <Box className={styles.wrapper}>
-            <Box className={styles.nav} direction={'vertical'}>
-                <Menu items={menuItems} />
-            </Box>
-            <ServersRoutes />
-        </Box>
-    );
+        const items = [
+            { locationId: 2.1, globalId: 2.1, path: '/find_servers', title: 'ПОИСК СЕРВЕРОВ', element: <FindServers /> },
+            { locationId: 2.2, globalId: 2.2, path: '/create_server', title: 'СОЗДАТЬ СЕРВЕР', element: <CreateServer /> },
+            { locationId: 2.3, globalId: 2.3, path: '/local_game', title: 'ЛОКАЛЬНАЯ ИГРА', element: <LocalGame /> },
+            { locationId: 2.4, globalId: 1, path: '/main', title: 'ВЕРНУТСЯ В МЕНЮ' },
+        ];
+
+        const activeRoute = items.find((i) => i.path === '/' + window.location.pathname.replace(/\/$/, '').split('/').pop())?.globalId || 2.0;
+
+        if (activeRoute) {
+            engineApi.setLocation(activeRoute);
+        }
+
+        return items.reduce(
+            (acc: { menuItems: Array<IMenu.IItem>; routes: Array<RouteProps> }, i) => {
+                acc.menuItems.push({
+                    id: i.locationId,
+                    title: i.title,
+                    onClick: () => {
+                        engineApi.setLocation(i.globalId);
+                        navigate(i.path === '/main' ? i.path : '/servers' + i.path);
+                        activeId = i.globalId;
+                    },
+                    onMouseEnter: () => engineApi.setLocation(i.locationId),
+                    onMouseLeave: () => engineApi.setLocation(activeId),
+                });
+                i.element && acc.routes.push({ path: i.path, element: i.element });
+
+                return acc;
+            },
+            { menuItems: [], routes: [] }
+        );
+    }, []);
+
+    return <PageLayout menuItems={menuItems} routes={routes} />;
 };
 
 export default ServersPage;

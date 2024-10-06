@@ -10,17 +10,15 @@ const AuthPage = () => {
     const navigate = useNavigate();
 
     const { menuItems, routes } = useMemo(() => {
-        let activeId = 0.0;
-
         const items = [
             { id: 0.1, path: '/login', title: 'ЛОГИН', element: <Login /> },
             { id: 0.2, path: '/registration', title: 'РЕГИСТРАЦИЯ', element: <Registration /> },
         ];
 
-        const activeRoute = items.find((i) => '/' + i.path === window.location.pathname.replace(/\/$/, '').split('/').pop());
+        let activeRoute = items.find((i) => i.path === '/' + window.location.pathname.replace(/\/$/, '').split('/').pop())?.id || 0.0;
 
         if (activeRoute) {
-            engineApi.setLocation(activeRoute.id);
+            engineApi.setLocation(activeRoute);
         }
 
         return items.reduce(
@@ -31,10 +29,10 @@ const AuthPage = () => {
                     onClick: () => {
                         engineApi.setLocation(i.id);
                         navigate('/auth' + i.path);
-                        activeId = i.id;
+                        activeRoute = i.id;
                     },
                     onMouseEnter: () => engineApi.setLocation(i.id),
-                    onMouseLeave: () => engineApi.setLocation(activeId || 0.0),
+                    onMouseLeave: () => engineApi.setLocation(activeRoute),
                 });
                 acc.routes.push({ path: i.path, element: i.element });
 

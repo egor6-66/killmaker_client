@@ -1,23 +1,40 @@
-import React from 'react';
+import React, { useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { Box, Menu } from '@/components';
-import { useDebounce, useRoutesTransition } from '@/hooks';
 import { engineApi } from '@/utils';
 
 import styles from './styles.module.scss';
 
 const MainPage = () => {
-    const { setLocation } = useRoutesTransition();
+    const navigate = useNavigate();
 
-    const menuItems = [
-        { id: 0, title: 'СЕРВЕРЫ', onClick: () => setLocation('servers') },
-        { id: 1, title: 'НАСТРОЙКИ', onClick: () => setLocation('settings') },
-        { id: 2, title: 'ВЫХОД', onClick: () => setLocation('auth') },
-    ];
+    const menuItems = useMemo(() => {
+        const items = [
+            { locationId: 1.1, globalId: 2, path: '/servers', title: 'СЕРВЕРЫ' },
+            { locationId: 1.2, globalId: 3, path: '/settings', title: 'НАСТРОЙКИ' },
+            { locationId: 1.3, globalId: 0, path: '/auth', title: 'ВЫХОД' },
+        ];
+
+        if (window.location.pathname.replace(/\/$/, '').split('/').pop() === 'main') {
+            engineApi.setLocation(1);
+        }
+
+        return items.map((i) => ({
+            id: i.globalId,
+            title: i.title,
+            onClick: () => {
+                engineApi.setLocation(i.globalId);
+                navigate(i.path);
+            },
+            onMouseEnter: () => engineApi.setLocation(i.locationId),
+            onMouseLeave: () => engineApi.setLocation(1),
+        }));
+    }, []);
 
     return (
         <Box className={styles.wrapper} direction={'vertical'}>
-            <Menu items={menuItems} onMouseEnter={(id) => engineApi.setLocation(id + 1)} onMouseLeave={(id) => engineApi.setHover(0)} />
+            <Menu items={menuItems} />
         </Box>
     );
 };
