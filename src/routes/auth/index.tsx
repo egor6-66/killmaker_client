@@ -1,36 +1,50 @@
-import React from 'react';
+import React, { useMemo } from 'react';
+import { RouteProps, useNavigate } from 'react-router-dom';
 
-import { Box, Menu } from '@/components';
-import { useRoutesTransition } from '@/hooks';
+import { IMenu, PageLayout } from '@/components';
+import Login from '@/routes/auth/routes/login';
+import Registration from '@/routes/auth/routes/registration';
 import { engineApi } from '@/utils';
 
-import styles from './styles.module.scss';
-
 const AuthPage = () => {
-    const { setLocation } = useRoutesTransition();
+    const navigate = useNavigate();
 
-    const menuItems = [
-        // { id: 0, title: 'ПРИЛОЖЕНИЕ', onClick: () => setMainLocation('main') },
-        // { id: 1, title: 'АККАУНТ', onClick: () => setMainLocation('main') },
-        {
-            id: 2,
-            title: 'ВЕРНУТСЯ В МЕНЮ',
-            onClick: () => {
-                engineApi.setAuth(1);
-                setTimeout(() => {
-                    setLocation('main');
-                }, 700);
+    const { menuItems, routes } = useMemo(() => {
+        let activeId = 0.0;
+
+        const items = [
+            { id: 0.1, path: '/login', title: 'ЛОГИН', element: <Login /> },
+            { id: 0.2, path: '/registration', title: 'РЕГИСТРАЦИЯ', element: <Registration /> },
+        ];
+
+        const activeRoute = items.find((i) => '/' + i.path === window.location.pathname.replace(/\/$/, '').split('/').pop());
+
+        if (activeRoute) {
+            engineApi.setLocation(activeRoute.id);
+        }
+
+        return items.reduce(
+            (acc: { menuItems: Array<IMenu.IItem>; routes: Array<RouteProps> }, i) => {
+                acc.menuItems.push({
+                    id: i.id,
+                    title: i.title,
+                    onClick: () => {
+                        engineApi.setLocation(i.id);
+                        navigate('/auth' + i.path);
+                        activeId = i.id;
+                    },
+                    onMouseEnter: () => engineApi.setLocation(i.id),
+                    onMouseLeave: () => engineApi.setLocation(activeId || 0.0),
+                });
+                acc.routes.push({ path: i.path, element: i.element });
+
+                return acc;
             },
-        },
-    ];
+            { menuItems: [], routes: [] }
+        );
+    }, []);
 
-    return (
-        <Box className={styles.wrapper}>
-            <Box className={styles.nav} direction={'vertical'}>
-                <Menu items={menuItems} />
-            </Box>
-        </Box>
-    );
+    return <PageLayout menuItems={menuItems} routes={routes} />;
 };
 
 export default AuthPage;

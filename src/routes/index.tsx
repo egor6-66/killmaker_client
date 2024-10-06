@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import AuthPage from './auth';
@@ -10,6 +10,8 @@ import SettingsPage from './settings';
 import styles from './styles.module.scss';
 
 const MainRoutes = () => {
+    const location = useLocation();
+
     const routes = [
         { id: 0, path: '/auth/*', element: <AuthPage /> },
         { id: 1, path: '/main' || '/', element: <MainPage /> },
@@ -19,7 +21,7 @@ const MainRoutes = () => {
 
     return (
         <AnimatePresence mode={'wait'} initial={false}>
-            <Routes>
+            <Routes location={location} key={location.pathname.split('/')[1]}>
                 {routes.map(({ id, path, element }) => (
                     <Route key={id} path={path} element={<div className={styles.wrapper}>{element}</div>} />
                 ))}

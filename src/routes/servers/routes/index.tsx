@@ -10,8 +10,6 @@ import FindServers from './find-servers';
 import LocalGame from './local-game';
 
 const ServersRoutes = () => {
-    const location = useLocation();
-
     const routes = [
         { id: 0, path: '/create_server', element: <CreateServer /> },
         { id: 1, path: '/find_servers', element: <FindServers /> },
@@ -20,7 +18,7 @@ const ServersRoutes = () => {
 
     return (
         <AnimatePresence mode={'wait'}>
-            <Routes location={location} key={location.pathname.split('/')[1]}>
+            <Routes>
                 {routes.map(({ id, path, element }) => (
                     <Route
                         key={id}
