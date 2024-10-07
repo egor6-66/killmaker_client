@@ -9,13 +9,13 @@ import styles from './styles.module.scss';
 
 const MainPage = () => {
     const navigate = useNavigate();
-    const { data } = Api.user.getViewer();
+    // const { data } = Api.user.getViewer();
     const logout = Api.auth.logout();
 
     const menuItems = useMemo(() => {
         const items = [
-            { locationId: 1.1, globalId: 2, path: '/servers', title: 'СЕРВЕ' },
-            { locationId: 1.2, globalId: 3, path: '/settings', title: 'НАСТРОЙКИ' },
+            { locationId: 1.1, globalId: 2, path: '/home/servers', title: 'СЕРВЕР' },
+            { locationId: 1.2, globalId: 3, path: '/home/settings', title: 'НАСТРОЙКИ' },
             { locationId: 1.3, globalId: 0, path: '/auth', title: 'ВЫХОД' },
         ];
 

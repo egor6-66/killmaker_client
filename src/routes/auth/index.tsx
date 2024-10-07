@@ -1,8 +1,10 @@
 import React, { useMemo } from 'react';
 import { RouteProps, useNavigate } from 'react-router-dom';
 
-import { IMenu, PageLayout } from '@/components';
+import { IMenu } from '@/components';
 import { engineApi } from '@/utils';
+
+import { PageLayout } from '../components';
 
 import BaseAuth from './routes/base';
 

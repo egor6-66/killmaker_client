@@ -30,9 +30,7 @@ class Api {
                         await this.axios.post('auth/refreshToken');
 
                         return await this.axios.request(originalRequest);
-                    } catch (err) {
-                        window.location.href = '/auth';
-                    }
+                    } catch (err) {}
                 }
 
                 return Promise.reject(error);

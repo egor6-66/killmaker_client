@@ -1,0 +1,18 @@
+@use "utils/mixins";
+
+.wrapper{
+  @include mixins.box-size(100%, 100%);
+  @include mixins.flex-column;
+
+  .header{
+    @include mixins.box-size(100%, 30px);
+    @include mixins.flex;
+    background-color: #f5222d;
+  }
+
+  .main{
+    @include mixins.flex;
+    width: 100%;
+    flex: 1;
+  }
+}

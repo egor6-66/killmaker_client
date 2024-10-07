@@ -1,33 +1,35 @@
-import React from 'react';
-import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
+import Api from '@/api';
+
 import AuthPage from './auth';
-import MainPage from './main';
-import ServersPage from './servers';
-import SettingsPage from './settings';
+import HomeRoutes from './home';
 
 import styles from './styles.module.scss';
 
 const MainRoutes = () => {
+    const navigate = useNavigate();
     const location = useLocation();
+    const { data: viewer } = Api.user.getViewer();
 
-    const routes = [
-        { id: 0, path: '/auth/*', element: <AuthPage /> },
-        { id: 1, path: '/main' || '/', element: <MainPage /> },
-        { id: 2, path: '/servers/*', element: <ServersPage /> },
-        { id: 3, path: '/settings/*', element: <SettingsPage /> },
-    ];
+    useEffect(() => {
+        if (!location.pathname.includes('auth') && !viewer?.data) {
+            navigate('/auth');
+        }
+    }, [viewer?.data]);
 
     return (
-        <AnimatePresence mode={'wait'} initial={false}>
-            <Routes location={location} key={location.pathname.split('/')[1]}>
-                {routes.map(({ id, path, element }) => (
-                    <Route key={id} path={path} element={<div className={styles.wrapper}>{element}</div>} />
-                ))}
-                <Route path="*" element={<Navigate to="/main" replace />} />
-            </Routes>
-        </AnimatePresence>
+        <div className={styles.wrapper}>
+            <AnimatePresence mode={'wait'} initial={false}>
+                <Routes>
+                    <Route path={'/auth/*'} element={<AuthPage />} />
+                    <Route path={'/home/*'} element={<HomeRoutes />} />
+                    <Route path={'*'} element={<Navigate to={'/home'} />} />
+                </Routes>
+            </AnimatePresence>
+        </div>
     );
 };
 
