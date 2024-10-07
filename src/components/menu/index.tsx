@@ -1,17 +1,20 @@
 import React from 'react';
 import classNames from 'classnames';
 
+import Button from '../button';
+
 import { IProps } from './interfaces';
 
 import styles from './styles.module.scss';
 
 const Menu = (props: IProps) => {
-    const { items } = props;
+    const { items, activeItemId } = props;
 
     return (
         <ul className={classNames(styles.wrapper)}>
             {items.map(({ id, title, icon, onClick, onMouseLeave, onMouseEnter }) => (
-                <li
+                <Button
+                    active={id === activeItemId}
                     key={id}
                     onClick={() => onClick(id)}
                     onMouseEnter={() => onMouseEnter && onMouseEnter(id)}
@@ -19,7 +22,7 @@ const Menu = (props: IProps) => {
                     className={styles.item}
                 >
                     {title}
-                </li>
+                </Button>
             ))}
         </ul>
     );

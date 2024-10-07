@@ -34,5 +34,6 @@
     event.onmessage = () => {
         addScript();
         addLink();
+        console.log('msg')
     };
 })();

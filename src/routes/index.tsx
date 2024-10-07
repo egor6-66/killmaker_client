@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import AuthPage from './auth';
@@ -25,6 +25,7 @@ const MainRoutes = () => {
                 {routes.map(({ id, path, element }) => (
                     <Route key={id} path={path} element={<div className={styles.wrapper}>{element}</div>} />
                 ))}
+                <Route path="*" element={<Navigate to="/main" replace />} />
             </Routes>
         </AnimatePresence>
     );

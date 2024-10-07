@@ -1,11 +1,33 @@
-.base {
-  padding: 8px 12px;
-  border-radius: 12px;
+@use 'utils/mixins';
+
+.wrapper {
+  @include mixins.flex(center, center);
+  @include mixins.box-size(100%, auto);
+  color: var(--text-primary);
+  padding: 12px 20px;
+  background-color: var(--bg-dimming-primary);
+  border-radius: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+  border: 1px solid var(--border-secondary);
+  will-change: transform;
+  box-shadow: var(--box-shadow);
+
+  &:hover {
+    transform: scale(0.98);
+  }
+}
+.active{
+  box-shadow: var(--box-shadow-active);
 }
 
-.link {
-  color: var(--text-primary);
-  border-radius: 12px;
-  font-size: 24px;
-  font-weight: 600;
+.error{
+  box-shadow: var(--box-shadow-error);
+  color: #f5222d;
+  opacity: 1!important;
+}
+
+.disabled{
+  pointer-events: none;
+  opacity: 0.5;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, RouteProps, Routes } from 'react-router-dom';
+import { Route, RouteProps, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import { Box, IMenu, Menu } from '@/components';
@@ -13,11 +13,12 @@ interface IProps {
 
 const PageLayout = (props: IProps) => {
     const { menuItems, routes } = props;
+    const location = useLocation();
 
     return (
-        <Box className={styles.wrapper}>
-            <Box className={styles.nav} direction={'vertical'}>
-                <Menu items={menuItems} />
+        <Box className={styles.wrapper} enableAnimation>
+            <Box className={styles.nav} direction={'vertical'} enableAnimation>
+                <Menu items={menuItems} activeItemId={menuItems.find((i) => i.payload === '/' + location.pathname.replace(/\/$/, '').split('/').pop())?.id} />
             </Box>
             <AnimatePresence mode={'wait'}>
                 <Routes>
@@ -26,7 +27,7 @@ const PageLayout = (props: IProps) => {
                             key={path}
                             path={path}
                             element={
-                                <Box bg className={styles.route} animationVariants={'autoWidth'}>
+                                <Box bg className={styles.route} animationVariants={'autoWidth'} enableAnimation>
                                     {element}
                                 </Box>
                             }

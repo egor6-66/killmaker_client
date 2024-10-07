@@ -1,24 +1,12 @@
-import { useEffect, useState } from 'react';
+import { DependencyList, useEffect } from 'react';
 
-function useDebounce(value: any, delay: number) {
-    const [debouncedValue, setDebouncedValue] = useState(value);
+import useTimeoutFn from './useTimeoutFn';
 
-    useEffect(
-        () => {
-            // Update debounced value after delay
-            const t = setTimeout(() => {
-                setDebouncedValue(value);
-            }, delay);
+export type UseDebounceReturn = [() => boolean | null, () => void];
 
-            // clean up the timeout after value changes
-            return () => {
-                clearTimeout(t);
-            };
-        },
-        [value, delay] // re-run if value or delay changes
-    );
+export default function useDebounce(fn: () => void, ms = 0, deps: DependencyList = []): UseDebounceReturn {
+    const { isReady, clear, reset } = useTimeoutFn(fn, ms);
+    useEffect(reset, deps);
 
-    return debouncedValue;
+    return [isReady, clear];
 }
-
-export default useDebounce;

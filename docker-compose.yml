@@ -1,0 +1,17 @@
+services:
+  playground:
+    container_name: playground
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: prod
+    working_dir: /app
+    env_file:
+      - .env.production
+    networks:
+      - deathmatch.net
+    restart: always
+networks:
+  deathmatch.net:
+    name: deathmatch.net
+    external: true

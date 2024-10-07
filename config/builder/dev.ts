@@ -33,7 +33,12 @@ function bootstrap({ buildConfig, serverPort, buildPath, htmlPath, assetsPath }:
         });
         app.use('*/assets', express.static(assetsPath));
         app.use('/*', express.static(buildPath));
-
+        app.use((req, res, next) => {
+            res.setHeader('Access-Control-Allow-Origin', '*');
+            res.setHeader('Access-Control-Allow-Methods', 'GET');
+            res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+            next();
+        });
         app.listen(serverPort, () => {
             console.log(`dev server started on port ${serverPort}`);
         });

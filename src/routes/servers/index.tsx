@@ -1,9 +1,7 @@
 import React, { useMemo } from 'react';
 import { RouteProps, useNavigate } from 'react-router-dom';
 
-import { Box, IMenu, Menu, PageLayout } from '@/components';
-import { useRoutesTransition } from '@/hooks';
-import Login from '@/routes/auth/routes/login';
+import { IMenu, PageLayout } from '@/components';
 import { engineApi } from '@/utils';
 
 import { CreateServer, FindServers, LocalGame } from './routes';
@@ -23,7 +21,7 @@ const ServersPage = () => {
             { locationId: 2.4, globalId: 1, path: '/main', title: 'ВЕРНУТСЯ В МЕНЮ' },
         ];
 
-        const activeRoute = items.find((i) => i.path === '/' + window.location.pathname.replace(/\/$/, '').split('/').pop())?.globalId || 2.0;
+        const activeRoute = items.find((i) => window.location.pathname.includes(i.path))?.globalId || 2.0;
 
         if (activeRoute) {
             engineApi.setLocation(activeRoute);

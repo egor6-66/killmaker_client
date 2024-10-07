@@ -17,8 +17,8 @@ const SettingsPage = () => {
     ];
 
     return (
-        <Box className={styles.wrapper}>
-            <Box className={styles.nav} direction={'vertical'}>
+        <Box className={styles.wrapper} enableAnimation>
+            <Box className={styles.nav} direction={'vertical'} enableAnimation>
                 <Menu items={menuItems} />
             </Box>
             <SettingsRoutes />

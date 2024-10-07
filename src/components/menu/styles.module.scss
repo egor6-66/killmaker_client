@@ -3,23 +3,5 @@
 .wrapper {
   @include mixins.flex-column(center, center);
   @include mixins.box-size(100%, 100%);
-  gap: 2px;
-
-  .item {
-    @include mixins.flex(center, center);
-    @include mixins.box-size(100%, auto);
-    color: var(--text-primary);
-    padding: 12px 20px;
-    background-color: var(--bg-dimming-primary);
-    border-radius: 8px;
-    transition: all 0.5s;
-    cursor: pointer;
-    border: 1px solid var(--border-secondary);
-    will-change: transform;
-    box-shadow: var(--box-shadow);
-
-    &:hover {
-      transform: scale(0.98);
-    }
-  }
+  gap: 6px;
 }

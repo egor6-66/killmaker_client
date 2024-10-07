@@ -1,15 +1,20 @@
 import React, { HTMLAttributes, MouseEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 import classNames from 'classnames';
+import { motion, MotionProps } from 'framer-motion';
 
 import styles from './styles.module.scss';
 
 type Props = {
     link?: string;
-} & HTMLAttributes<HTMLButtonElement>;
+    active?: boolean;
+    error?: boolean;
+    disabled?: boolean;
+} & HTMLAttributes<HTMLButtonElement> &
+    MotionProps;
 
 const Button = (props: Props) => {
-    const { children, link, className, onClick, ...rest } = props;
+    const { children, link, disabled, className, error, active, onClick, ...rest } = props;
     const navigate = useNavigate();
 
     const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
@@ -21,15 +26,19 @@ const Button = (props: Props) => {
     };
 
     const getClasses = () => {
-        const classes = [className, styles.base];
-        if (link) classes.push(styles.link);
+        const classes = [className, styles.wrapper];
+        if (active) classes.push(styles.active);
+        if (disabled) classes.push(styles.disabled);
+        if (error) classes.push(styles.error);
 
         return classes;
     };
 
     return (
         <button onClick={handleClick} className={classNames(...getClasses())} {...rest}>
-            {children}
+            <motion.div key={String(children)} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                {children}
+            </motion.div>
         </button>
     );
 };

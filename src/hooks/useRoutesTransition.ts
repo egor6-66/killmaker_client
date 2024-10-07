@@ -10,9 +10,9 @@ function useRoutesTransition() {
     const location = useLocation();
 
     const authRoutes: Routes = {
-        auth: { path: '/auth', index: 0 },
-        registration: { path: '/auth/registration', index: 0.1 },
-        login: { path: '/auth/login', index: 0.2 },
+        auth: { path: '/base', index: 0 },
+        registration: { path: '/base/registration', index: 0.1 },
+        login: { path: '/base/login', index: 0.2 },
     };
 
     const mainRoutes: Routes = {
