@@ -19,7 +19,7 @@ const AuthPage = () => {
 
         let activeRoute = items.find((i) => window.location.pathname.includes(i.path))?.id || 0.0;
 
-        if (activeRoute) {
+        if (activeRoute !== undefined) {
             engineApi.setLocation(activeRoute);
         }
 

@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class killmaker_home : ModuleRules
+public class killmaker : ModuleRules
 {
-	public killmaker_home(ReadOnlyTargetRules Target) : base(Target)
+	public killmaker(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	

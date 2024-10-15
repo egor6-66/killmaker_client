@@ -1,4 +1,4 @@
-type Modules = '_SetLocation' | '_SetAuth' | '_SetHover';
+type Modules = '_SetLocation' | '_SetAuth' | '_GoToLevel';
 
 class engineApi {
     getModule = (name: Modules) => {
@@ -16,8 +16,8 @@ class engineApi {
         module && module(value);
     }
 
-    setHover(value: number) {
-        const module = this.getModule('_SetHover');
+    goToLevel(value: number) {
+        const module = this.getModule('_GoToLevel');
         module && module(value);
     }
 }

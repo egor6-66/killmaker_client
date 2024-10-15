@@ -1,6 +1,5 @@
 services:
-  killmaker:
-    container_name: home
+  app:
     build:
       context: .
       dockerfile: Dockerfile
@@ -12,10 +11,12 @@ services:
     env_file:
       - .env.development
     networks:
-      - deathmatch.net
+      - killmaker.net
     restart: always
+    ports:
+      - 3000:3000
 
 networks:
-  deathmatch.net:
-    name: deathmatch.net
+  killmaker.net:
+    name: killmaker.net
     external: true

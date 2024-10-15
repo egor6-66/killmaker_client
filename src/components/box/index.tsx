@@ -11,6 +11,7 @@ type Props = {
     animationKey?: string;
     enableAnimation?: boolean;
     bg?: boolean;
+    borderRadius?: number;
 } & HTMLAttributes<HTMLDivElement> &
     MotionProps;
 
@@ -28,7 +29,7 @@ const animations = {
 };
 
 const Box = (props: Props) => {
-    const { children, className, gap = 8, animationVariants = 'opacity', enableAnimation, direction, animationKey, bg, ...rest } = props;
+    const { children, className, gap = 8, borderRadius = 12, animationVariants = 'opacity', enableAnimation, direction, animationKey, bg, ...rest } = props;
 
     const getClasses = () => {
         const classes = [className, styles.wrapper, styles[direction]];
@@ -42,7 +43,14 @@ const Box = (props: Props) => {
     };
 
     return (
-        <motion.div style={{ gap }} key={animationKey} className={classNames(...getClasses())} {...getAnimation()} {...rest} transition={{ duration: 0.5 }}>
+        <motion.div
+            style={{ gap, borderRadius }}
+            key={animationKey}
+            className={classNames(...getClasses())}
+            {...getAnimation()}
+            {...rest}
+            transition={{ duration: 0.5 }}
+        >
             {children}
         </motion.div>
     );

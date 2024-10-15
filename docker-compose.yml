@@ -1,6 +1,5 @@
 services:
-  playground:
-    container_name: playground
+  app:
     build:
       context: .
       dockerfile: Dockerfile
@@ -9,9 +8,10 @@ services:
     env_file:
       - .env.production
     networks:
-      - deathmatch.net
+      - killmaker.net
     restart: always
+
 networks:
-  deathmatch.net:
-    name: deathmatch.net
+  killmaker.net:
+    name: killmaker.net
     external: true

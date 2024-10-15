@@ -5,18 +5,12 @@
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "killmaker_home",
+			"Name": "killmaker",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
 				"Engine"
 			]
-		}
-	],
-	"Plugins": [
-		{
-			"Name": "ApexDestruction",
-			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [

@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class killmaker_homeTarget : TargetRules
+public class killmakerTarget : TargetRules
 {
-	public killmaker_homeTarget(TargetInfo Target) : base(Target)
+	public killmakerTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
 
-		ExtraModuleNames.AddRange( new string[] { "killmaker_home" } );
+		ExtraModuleNames.AddRange( new string[] { "killmaker" } );
 	}
 }

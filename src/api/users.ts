@@ -11,6 +11,7 @@ class Users {
         return useQuery({
             queryKey: ['viewer'],
             queryFn: () => this.axios.get('users/viewer'),
+            staleTime: Infinity,
         });
     }
 }

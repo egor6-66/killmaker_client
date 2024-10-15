@@ -1,6 +1,7 @@
 import axiosBase, { AxiosRequestConfig } from 'axios';
 
 import Auth from './auth';
+import Server from './server';
 import Users from './users';
 
 class Api {
@@ -10,6 +11,8 @@ class Api {
 
     auth = new Auth(this.axios);
     user = new Users(this.axios);
+    server = new Server(this.axios);
+
     constructor() {
         this.interceptor();
     }

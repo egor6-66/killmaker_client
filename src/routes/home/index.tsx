@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 
 import { Box } from '@/components';
 
+import { Header } from './components';
 import MainPage from './main';
 import ServersPage from './servers';
 import SettingsPage from './settings';
@@ -21,8 +22,8 @@ const HomeRoutes = () => {
 
     return (
         <div className={styles.wrapper}>
-            <Box enableAnimation className={styles.header}>
-                headerefesfefsdadsdddwsdasd
+            <Box borderRadius={0} enableAnimation className={styles.header}>
+                <Header />
             </Box>
 
             <AnimatePresence mode={'wait'}>
