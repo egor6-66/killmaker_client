@@ -11,9 +11,9 @@ const SettingsPage = () => {
     const { setLocation } = useRoutesTransition();
 
     const menuItems = [
-        { id: 0, title: 'ПРИЛОЖЕНИЕ', onClick: () => setLocation('main') },
-        { id: 1, title: 'АККАУНТ', onClick: () => setLocation('main') },
-        { id: 2, title: 'ВЕРНУТСЯ В МЕНЮ', onClick: () => setLocation('main') },
+        // { id: 0, title: 'ПРИЛОЖЕНИЕ', onClick: () => setLocation('/home/main') },
+        // { id: 1, title: 'АККАУНТ', onClick: () => setLocation('/home/main') },
+        { id: 2, title: 'ВЕРНУТСЯ В МЕНЮ', onClick: () => setLocation('/home/main') },
     ];
 
     return (

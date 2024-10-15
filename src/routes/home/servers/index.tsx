@@ -17,9 +17,9 @@ const ServersPage = () => {
         let activeId = 2.0;
 
         const items = [
-            { locationId: 2.1, globalId: 2.1, path: 'find_servers', title: 'ПОИСК СЕРВЕРОВ', element: <FindServers /> },
+            // { locationId: 2.1, globalId: 2.1, path: 'find_servers', title: 'ПОИСК СЕРВЕРОВ', element: <FindServers /> },
             { locationId: 2.2, globalId: 2.2, path: 'create_server', title: 'СОЗДАТЬ СЕРВЕР', element: <CreateServer /> },
-            { locationId: 2.3, globalId: 2.3, path: 'local_game', title: 'ЛОКАЛЬНАЯ ИГРА', element: <LocalGame /> },
+            // { locationId: 2.3, globalId: 2.3, path: 'local_game', title: 'ЛОКАЛЬНАЯ ИГРА', element: <LocalGame /> },
             { locationId: 2.4, globalId: 1, path: '/home/main', title: 'ВЕРНУТСЯ В МЕНЮ' },
         ];
 

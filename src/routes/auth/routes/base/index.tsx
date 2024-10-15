@@ -20,31 +20,33 @@ const BaseAuth = () => {
 
     const submit = async () => {
         const data = { nickname: nickname.value, password: password.value };
-
-        if (password.value.length < 5) {
-            return setError('СЛИШКОМ КОРОТКИЙ ПАРОЛЬ');
-        }
+        //
+        // if (password.value.length < 5) {
+        //     return setError('СЛИШКОМ КОРОТКИЙ ПАРОЛЬ');
+        // }
 
         const onSuccess = () => {
-            navigate('/main');
+            navigate('/home/main');
             engineApi.setLocation(1);
         };
 
-        if (location.pathname.includes('login')) {
-            handleLogin.mutate(data, {
-                onSuccess,
-                onError: () => {
-                    setError('НЕВЕРНЫЙ НИКНЭЙМ ИЛИ ПАРОЛЬ');
-                },
-            });
-        } else {
-            registration.mutate(data, {
-                onSuccess,
-                onError: () => {
-                    setError('ЭТОТ НИКНЭЙМ УЖЕ ЗАНЯТ');
-                },
-            });
-        }
+        onSuccess();
+        //
+        // if (location.pathname.includes('login')) {
+        //     handleLogin.mutate(data, {
+        //         onSuccess,
+        //         onError: () => {
+        //             setError('НЕВЕРНЫЙ НИКНЭЙМ ИЛИ ПАРОЛЬ');
+        //         },
+        //     });
+        // } else {
+        //     registration.mutate(data, {
+        //         onSuccess,
+        //         onError: () => {
+        //             setError('ЭТОТ НИКНЭЙМ УЖЕ ЗАНЯТ');
+        //         },
+        //     });
+        // }
     };
 
     useEffect(() => {
@@ -57,7 +59,6 @@ const BaseAuth = () => {
                 <Input attrs={{ ...nickname.inputAttrs }} errorMessage={nickname.errorMessage} />
                 <Input attrs={{ ...password.inputAttrs }} errorMessage={password.errorMessage} />
             </Box>
-
             <Button onClick={submit} error={!!error} disabled={!!error || !nickname.value || !password.value}>
                 {error || 'ВПЕРЕД'}
             </Button>

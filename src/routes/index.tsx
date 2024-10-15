@@ -15,17 +15,21 @@ const MainRoutes = () => {
     const location = useLocation();
     const { data: viewer, isLoading } = Api.user.getViewer();
 
-    useEffect(() => {
-        if (!isLoading) {
-            if (location.pathname.includes('auth') && viewer?.data) {
-                navigate('/home/main');
-            }
+    // useEffect(() => {
+    //     if (!isLoading) {
+    //         if (location.pathname.includes('auth') && viewer?.data) {
+    //             navigate('/home/main');
+    //         }
+    //
+    //         if (location.pathname.includes('home') && !viewer?.data) {
+    //             navigate('/auth');
+    //         }
+    //     }
+    // }, [isLoading]);
 
-            if (location.pathname.includes('home') && !viewer?.data) {
-                navigate('/auth');
-            }
-        }
-    }, [isLoading]);
+    useEffect(() => {
+        navigate('auth');
+    }, []);
 
     return (
         <div className={styles.wrapper}>
@@ -34,7 +38,7 @@ const MainRoutes = () => {
                     <Route path={'/auth/*'} element={<AuthPage />} />
                     <Route path={'/home/*'} element={<HomeRoutes />} />
                     <Route path={'/battlefield/:id'} element={<BattlefieldRoutes />} />
-                    <Route path={'*'} element={<Navigate to={'/home'} />} />
+                    <Route path={'*'} element={<Navigate to={'/home/main'} />} />
                 </Routes>
             </AnimatePresence>
         </div>

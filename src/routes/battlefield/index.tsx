@@ -15,7 +15,7 @@ const BattlefieldRoutes = () => {
                         path={'battlefield'}
                         element={
                             <div style={{ color: 'red', width: '100%', height: '100%' }}>
-                                <button onClick={() => engineApi.selected(2)}>dwadwdd</button>
+                                {/*<button onClick={() => engineApi.selected(2)}>dwadwdd</button>*/}
                             </div>
                         }
                     />

@@ -15,7 +15,7 @@ const MainPage = () => {
     const menuItems = useMemo(() => {
         const items = [
             { locationId: 1.1, globalId: 2, path: '/home/servers', title: 'СЕРВЕР' },
-            { locationId: 1.2, globalId: 3, path: '/home/settings', title: 'НАСТРОЙКИ' },
+            // { locationId: 1.2, globalId: 3, path: '/home/settings', title: 'НАСТРОЙКИ' },
             { locationId: 1.3, globalId: 0, path: '/auth', title: 'ВЫХОД' },
         ];
 

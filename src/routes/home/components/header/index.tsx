@@ -11,8 +11,8 @@ const Header = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.userInfo}>
-                <Image src={viewer?.data?.avatar} />
-                <div>{viewer?.data.nickname}</div>
+                {/*<Image src={viewer?.data?.avatar} />*/}
+                {/*<div>{viewer?.data.nickname}</div>*/}
             </div>
         </div>
     );
