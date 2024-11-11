@@ -1,3 +1,3 @@
-import PageLayout from './pageLayout';
+import MapsList from './maps-list';
 
-export { PageLayout };
+export { MapsList };

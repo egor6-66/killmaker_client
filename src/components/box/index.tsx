@@ -1,25 +1,19 @@
-import React, { HTMLAttributes } from 'react';
+import React, { forwardRef, HTMLAttributes } from 'react';
 import classNames from 'classnames';
 import { motion, MotionProps } from 'framer-motion';
 
 import styles from './styles.module.scss';
-
-type Props = {
-    direction?: 'vertical' | 'horizontal';
-    animationVariants?: 'opacity' | 'autoWidth';
-    gap?: number;
-    animationKey?: string;
-    enableAnimation?: boolean;
-    bg?: boolean;
-    borderRadius?: number;
-} & HTMLAttributes<HTMLDivElement> &
-    MotionProps;
 
 const animations = {
     opacity: {
         initial: { opacity: 0 },
         animate: { opacity: 1 },
         exit: { opacity: 0 },
+    },
+    autoHeight: {
+        initial: { height: 0 },
+        animate: { height: '100%' },
+        exit: { height: 0 },
     },
     autoWidth: {
         initial: { width: 0 },
@@ -28,8 +22,17 @@ const animations = {
     },
 };
 
-const Box = (props: Props) => {
-    const { children, className, gap = 8, borderRadius = 12, animationVariants = 'opacity', enableAnimation, direction, animationKey, bg, ...rest } = props;
+type Props = {
+    direction?: 'vertical' | 'horizontal';
+    animationVariants?: keyof typeof animations;
+    animationKey?: string;
+    enableAnimation?: boolean;
+    bg?: boolean;
+} & HTMLAttributes<HTMLDivElement> &
+    MotionProps;
+
+const Box = forwardRef((props: Props, ref: any) => {
+    const { children, className, animationVariants = 'opacity', enableAnimation, direction, animationKey, bg, ...rest } = props;
 
     const getClasses = () => {
         const classes = [className, styles.wrapper, styles[direction]];
@@ -43,17 +46,10 @@ const Box = (props: Props) => {
     };
 
     return (
-        <motion.div
-            style={{ gap, borderRadius }}
-            key={animationKey}
-            className={classNames(...getClasses())}
-            {...getAnimation()}
-            {...rest}
-            transition={{ duration: 0.5 }}
-        >
+        <motion.div ref={ref} key={animationKey} className={classNames(...getClasses())} {...getAnimation()} transition={{ duration: 0.25 }} {...rest}>
             {children}
         </motion.div>
     );
-};
+});
 
 export default Box;

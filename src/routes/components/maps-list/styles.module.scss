@@ -1,0 +1,43 @@
+@use 'utils/mixins';
+
+.wrapper {
+  @include mixins.box-size(100%, auto);
+  @include mixins.flex-column;
+  min-height: 200px;
+  position: relative;
+
+  .header {
+    @include mixins.box-size(100%, 200px);
+    @include mixins.flex;
+    color: var(--text-primary);
+    background-color: var(--bg-dimming-primary);
+    cursor: pointer;
+  }
+
+  .list {
+    @include mixins.box-size(100%, auto);
+    @include mixins.flex-column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-y: auto;
+
+    .itemWrapper {
+      @include mixins.box-size(100%, 200px);
+    }
+  }
+}
+
+.mapItem {
+  @include mixins.box-size(100%, 100%);
+  @include mixins.flex-column;
+  gap: 6px;
+  padding: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-size: 18px;
+  color: var(--text-primary);
+  cursor: pointer;
+}

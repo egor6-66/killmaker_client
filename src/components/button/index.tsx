@@ -18,6 +18,8 @@ const Button = (props: Props) => {
     const navigate = useNavigate();
 
     const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
+        if (active) return;
+
         if (link) {
             navigate(link);
         }

@@ -7,7 +7,7 @@ const sharedPlugins = [
         filter: /\.scss$/i,
         type: 'css',
         loadPaths: ['./src/styles'],
-        transform: postcssModules({ basedir: '[path][local]' }),
+        transform: postcssModules({ generateScopedName: '[path][local]' }),
     }),
 ];
 

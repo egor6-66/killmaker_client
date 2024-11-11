@@ -1,27 +1,22 @@
 import React from 'react';
-import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
-import { engineApi } from '@/utils';
+import { PageLayout } from './components';
+import LocalGame from './local-game';
 
 const BattlefieldRoutes = () => {
-    const location = useLocation();
-
     return (
-        <div>
-            <AnimatePresence mode={'wait'}>
-                <Routes location={location} key={location.pathname.split('/')[1]}>
-                    <Route
-                        path={'battlefield'}
-                        element={
-                            <div style={{ color: 'red', width: '100%', height: '100%' }}>
-                                {/*<button onClick={() => engineApi.selected(2)}>dwadwdd</button>*/}
-                            </div>
-                        }
-                    />
-                </Routes>
-            </AnimatePresence>
-        </div>
+        <Routes>
+            <Route
+                path={'/local_game/:id'}
+                element={
+                    <PageLayout>
+                        <LocalGame />
+                    </PageLayout>
+                }
+            />
+            <Route path={'*'} element={<Navigate to={'/manu/home'} />} />
+        </Routes>
     );
 };
 

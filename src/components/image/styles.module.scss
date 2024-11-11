@@ -6,8 +6,9 @@
   position: relative;
 
   .image {
+    @include mixins.box-size(100%, 100%);
     border-radius: var(--border-radius);
-    z-index: 1;
+    object-fit: cover;
   }
 
   .blur {

@@ -1,0 +1,14 @@
+@use "utils/mixins";
+
+.wrapper {
+  @include mixins.box-size(100%, 100%);
+  @include mixins.flex-column;
+  box-shadow: var(--box-shadow);
+  color: var(--text-primary);
+
+  .dropdown {
+    @include mixins.box-size(200px, auto);
+    @include mixins.flex-column;
+    gap: 12px;
+  }
+}

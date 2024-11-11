@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{7338BBA3-487B-EF5D-50A6-7AB05DB7F2D1}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "KillMakerGame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "VaRest",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/e47be161e7a24e928560290abd5dcc4f"
+		}
+	],
+	"TargetPlatforms": [
+		"HTML5"
+	]
+}

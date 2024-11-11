@@ -12,23 +12,13 @@
 <div class="canvas" id="mainarea">
     <canvas tabindex=0 id="canvas" oncontextmenu="event.preventDefault()" style="display:none;"/>
 </div>
-<script src="./assets/HTML5/killmaker.UE4.js"></script>
-<script>
-  function wasmLoaded(){
-    const script = document.createElement('script');
-    if(!document.getElementById('bootstrap')){
-      script.src = './assets/bootstrap.js';
-      script.id = 'bootstrap';
-      document.body.appendChild(script);
-      setTimeout(()=> {
-        document.getElementById('mainLoader').remove()
-      },500)
-    }
-  }
-</script>
-<div id="mainLoader" style="width: 100%; height: 100vh; background-color: #2b542c; position: fixed; z-index: 2; top: 0; left: 0;">
-    load...
-</div>
+
 <div class="root" id="root"></div>
+<script src="./assets/bootstrap.js"></script>
+<!--<script src="./assets/HTML5/KillMakerGame.UE4.js"></script>-->
+<script src="./assets/HTML5/KillMakerGame-HTML5-Shipping.UE4.js"></script>
+<script>
+  window.engine = {}
+</script>
 </body>
 </html>

@@ -8,12 +8,19 @@
   color: #fafafa;
   flex: 1;
   border-radius: 8px;
+  transition: all 0.5s;
   border: 1px solid var(--border-secondary);
   background-color: var(--bg-dimming-primary);
 
+
   input {
-    width: 100%;
+    @include mixins.box-size(100%, 100%)
   }
+}
+
+.active {
+  box-shadow: var(--box-shadow-active);
+  background-color: var(--bg-primary);
 }
 
 .error {

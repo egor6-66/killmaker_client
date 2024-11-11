@@ -1,0 +1,21 @@
+@use 'utils/mixins';
+
+.wrapper {
+  @include mixins.flex();
+  flex-wrap: wrap;
+
+  .fields {
+    color: var(--text-primary);
+
+    .row {
+      .key {
+
+      }
+
+      .val {
+
+      }
+    }
+
+  }
+}

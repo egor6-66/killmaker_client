@@ -1,13 +1,13 @@
 html[data-theme="base"] {
+    --primary: #ff0055;
+    --secondary: #890e37;
     --text-primary: #fafafa;
     --text-secondary: #d9d9d9;
-    --bg-primary: #141414;
+    --bg-primary: #181818;
     --bg-secondary: #434343;
-    --bg-dimming-primary:rgba(0, 0, 0, 0.7);
-    --bg-dimming-secondary:rgba(9, 9, 9, 0.3);
-    --border-primary:#434343;
+    --bg-dimming-primary: rgba(0, 0, 0, 0.7);
+    --bg-dimming-secondary: rgba(9, 9, 9, 0.3);
+    --border-primary: #434343;
     --border-secondary: #141414;
-    --box-shadow: 0px 0px 21px 1px rgba(255, 255, 255, 0.2);
-    --box-shadow-active: 0px 0px 21px 12px rgba(255, 255, 255, 0.4);
     --box-shadow-error: 0px 0px 21px 12px rgba(240, 19, 19, 0.4);
 }

@@ -1,0 +1,8 @@
+@use 'utils/mixins';
+
+.wrapper {
+  @include mixins.box-size(100%, 100%);
+  @include mixins.flex;
+  font-size: 40px;
+  color: var(--text-primary);
+}

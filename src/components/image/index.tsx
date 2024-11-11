@@ -5,11 +5,17 @@ import * as ImageTypes from './interface';
 import styles from './styles.module.scss';
 
 const Image = (props: ImageTypes.IProps) => {
-    const { src, blur, width = 30, height = 30 } = props;
+    const { full, src, blur, width = 30, height = 30 } = props;
 
     return (
         <div className={styles.wrapper} style={{ width, height }}>
-            <img className={styles.image} width={blur ? width - 20 : width} height={blur ? height - 20 : height} src={src || ''} alt={''} />
+            <img
+                className={styles.image}
+                width={full ? '100%' : blur ? width - 20 : width}
+                height={full ? '100%' : blur ? height - 20 : height}
+                src={src || ''}
+                alt={''}
+            />
             {blur && <div className={styles.blur} style={{ backgroundImage: `url(${src})` }}></div>}
         </div>
     );

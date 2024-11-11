@@ -2,9 +2,11 @@ HTML5
 build
 node_modules
 .idea
-engine/killmaker/.idea
-engine/killmaker/Content
-engine/killmaker/Binaries
-engine/killmaker/DerivedDataCache
-engine/killmaker/Intermediate
-engine/killmaker/Saved
+engine/back
+engine/KillMakerGame/.vs
+engine/KillMakerGame/.idea
+engine/KillMakerGame/Content
+engine/KillMakerGame/Binaries
+engine/KillMakerGame/DerivedDataCache
+engine/KillMakerGame/Intermediate
+engine/KillMakerGame/Saved

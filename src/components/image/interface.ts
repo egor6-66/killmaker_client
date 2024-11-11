@@ -3,4 +3,5 @@ export interface IProps {
     width?: number;
     height?: number;
     blur?: boolean;
+    full?: boolean;
 }

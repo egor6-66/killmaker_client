@@ -1,0 +1,14 @@
+@use 'utils/mixins';
+
+.wrapper {
+  @include mixins.flex;
+  @include mixins.box-size(100%, 100%);
+  gap: 8px;
+  z-index: 1;
+
+  .inputs {
+    @include mixins.box-size(100%, 100%);
+    @include mixins.flex;
+    gap: 4px;
+  }
+}
