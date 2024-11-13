@@ -7,7 +7,7 @@ RUN npm install
 
 FROM builder AS dev
 EXPOSE 3000
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "build:dev"]
 
 FROM builder AS prod-build
 ENV NODE_ENV=production

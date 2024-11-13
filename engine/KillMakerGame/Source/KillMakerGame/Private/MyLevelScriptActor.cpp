@@ -61,10 +61,5 @@ void AMyLevelScriptActor::ListenerChunksDownload(bool Status)
 	if (Status)
 	{
 		UGameplayStatics::OpenLevel(this, FName(LevelName), true);
-		GEngine->AddOnScreenDebugMessage(-1, 20.f, FColor::Red, TEXT("TransitionWithDownload"));
-	}
-	else
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("CHUNKS DOWNLOAD ERROR"));
 	}
 }

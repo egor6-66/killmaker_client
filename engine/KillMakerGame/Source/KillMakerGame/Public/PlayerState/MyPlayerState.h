@@ -23,6 +23,9 @@ protected:
 
 public:
 	virtual void Tick(float DeltaTime) override;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString CharacterVariant;
 };
 
 static bool NewClientEvent;

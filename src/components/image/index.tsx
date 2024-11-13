@@ -8,7 +8,7 @@ const Image = (props: ImageTypes.IProps) => {
     const { full, src, blur, width = 30, height = 30 } = props;
 
     return (
-        <div className={styles.wrapper} style={{ width, height }}>
+        <div className={styles.wrapper} style={{ width: full ? '100%' : width, height: full ? '100%' : height }}>
             <img
                 className={styles.image}
                 width={full ? '100%' : blur ? width - 20 : width}

@@ -1,7 +1,7 @@
 import { postcssModules, sassPlugin } from 'esbuild-sass-plugin';
 
 import devServerPlugin from './devServer';
-
+import prodServerPlugin from './prodServerPlugin';
 const sharedPlugins = [
     sassPlugin({
         filter: /\.scss$/i,
@@ -11,4 +11,4 @@ const sharedPlugins = [
     }),
 ];
 
-export { devServerPlugin, sharedPlugins };
+export { devServerPlugin, prodServerPlugin,sharedPlugins };

@@ -13,7 +13,7 @@ interface IProps {
 
 const emitter = new EventEmitter();
 
-function bootstrap({ buildConfig, serverPort, buildPath, htmlPath, assetsPath }: IProps) {
+function dev({ buildConfig, serverPort, buildPath, htmlPath, assetsPath }: IProps) {
     const app = express();
     context({
         plugins: [devServerPlugin({ htmlPath, buildPath, emitter, serverPort, assetsPath }), ...sharedPlugins],
@@ -45,4 +45,4 @@ function bootstrap({ buildConfig, serverPort, buildPath, htmlPath, assetsPath }:
     });
 }
 
-export default bootstrap;
+export default dev;

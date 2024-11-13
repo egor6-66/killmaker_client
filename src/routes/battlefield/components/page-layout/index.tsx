@@ -18,14 +18,15 @@ const PageLayout = (props: IProps) => {
     const params = useParams();
     const engine = useEngine();
     const [visibleMenu, setVisibleMenu] = useState(true);
-    const canvas = useRef(document.getElementById('canvas'));
 
     const [init, setInit] = useState(true);
 
     const pointerLock = () => {
-        if (canvas.current) {
-            canvas.current.focus();
-            canvas.current.requestPointerLock();
+        const canvas = document.getElementById('canvas');
+
+        if (canvas) {
+            canvas.focus();
+            canvas.requestPointerLock();
         }
     };
 
@@ -34,9 +35,11 @@ const PageLayout = (props: IProps) => {
     };
 
     useEffect(() => {
+        const canvas = document.getElementById('canvas');
+
         const handler = () => {
             if (!document.pointerLockElement) {
-                canvas.current.blur();
+                canvas.blur();
             }
 
             setVisibleMenu(!document.pointerLockElement);
@@ -45,7 +48,7 @@ const PageLayout = (props: IProps) => {
         document.addEventListener('pointerlockchange', handler);
 
         return () => {
-            canvas.current.removeEventListener('pointerlockchange', handler);
+            canvas.removeEventListener('pointerlockchange', handler);
         };
     }, []);
 

@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node config/builder --dev",
     "docker:dev": "docker compose -f docker-compose.dev.yml up --build -d",
-    "build:web": "ts-node config/builder --prod"
+    "docker:prod": "docker compose -f docker-compose.yml up --build -d",
+    "build:dev": "ts-node config/builder --mode=development",
+    "build:prod": "ts-node config/builder --mode=production"
   },
   "keywords": [],
   "author": "Egor Raybul",

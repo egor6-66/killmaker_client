@@ -1,25 +1,33 @@
-import React from 'react';
-import { AnimatePresence } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
-import { Box } from '@/components';
+import { Box, Image } from '@/components';
 
 import styles from './styles.module.scss';
 
-interface IProps {
-    visible: boolean;
-}
+const EngineLoading = () => {
+    const [progress, setProgress] = useState(0);
 
-const EngineLoading = (props: IProps) => {
-    const { visible } = props;
+    useEffect(() => {
+        window.engine.engineLoading = (current, total) => {
+            if (current && total) {
+                setProgress(Math.ceil((current / total) * 100));
+            }
+        };
+    }, []);
 
     return (
-        // <AnimatePresence initial={false}>
-        //     {visible && (
         <Box enableAnimation className={styles.wrapper}>
-            <img src={'http://localhost/storage/assets/logo_1.png'} alt={''} />
+            <div className={styles.body}>
+                <motion.div
+                    className={styles.overlay}
+                    initial={{ width: '100%' }}
+                    animate={{ width: `${100 - progress}%` }}
+                    transition={{ duration: 3 }}
+                ></motion.div>
+                <Image full src={`${process.env.STORAGE_URL}/assets/logo_1.png`} />
+            </div>
         </Box>
-        //     )}
-        // </AnimatePresence>
     );
 };
 

@@ -6,7 +6,7 @@ import Server from './server';
 import Users from './users';
 
 const axiosInstance = axiosBase.create({
-    baseURL: 'http://localhost/api',
+    baseURL: process.env.API_URL,
 } as AxiosRequestConfig);
 
 class Api {

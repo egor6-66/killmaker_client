@@ -1,13 +1,15 @@
-//
-// const isDev = require('esbuild')
-//     .HTML5({
-//         entryPoints: [path.resolve('src', 'index.tsx')],
-//         outdir: 'HTML5',
-//         outfile: 'output.js',
-//         bundle: true,
-//         loader: { '.ts': 'ts' },
-//     })
-//     .then(() => console.log('⚡ Done'))
-//     .catch(() => process.exit(1));
-//
-// console.log(process.argv.slice(2));
+import { BuildOptions, build } from 'esbuild';
+import { prodServerPlugin, sharedPlugins } from './plugins';
+
+interface IProps {
+    buildConfig: BuildOptions;
+    buildPath: string;
+    htmlPath: string;
+    assetsPath: string;
+}
+
+async function prod(props: IProps) {
+    await build({...props.buildConfig, plugins: [...sharedPlugins, prodServerPlugin(props)]})
+}
+
+export default prod;

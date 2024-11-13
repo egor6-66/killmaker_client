@@ -6,4 +6,20 @@
   gap: 6px;
   //background: var(--bg-primary);
   position: fixed;
+
+  .body{
+    @include mixins.flex-column(center, center);
+    @include mixins.box-size(90%, 30%);
+    position: relative;
+
+    .overlay{
+      @include mixins.box-size(100%, 100%);
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+      box-shadow: -36px 0px 66px 55px var(--bg-primary);
+      background-color: var(--bg-primary);
+    }
+  }
 }

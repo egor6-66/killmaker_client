@@ -2,7 +2,7 @@ import React from 'react';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
-import { Box, Loaders } from '@/components';
+import { Loaders } from '@/components';
 import { useEngine } from '@/hooks';
 import { AuthProvider, EngineProvider } from '@/proveders';
 
@@ -29,7 +29,7 @@ const MainRoutes = () => {
                         </AnimatePresence>
                     </EngineProvider>
                 ) : (
-                    <Loaders.Engine key={'loader'} visible />
+                    <Loaders.Engine key={'loader'} />
                 )}
             </div>
         </AuthProvider>

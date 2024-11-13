@@ -23,6 +23,7 @@ interface Window extends Window{
       engine:{
           engineEvent: (data: {eventName: string, data: any})=> void
           clientEvent: (name: string, data: object)=> void
+          engineLoading: (current: number, total: number)=> void
     };
 }
 declare var window: Window;
