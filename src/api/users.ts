@@ -1,6 +1,7 @@
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { Axios } from 'axios';
 
+import { UserInterfaces } from '@/interfaces';
 class Users {
     axios: Axios;
     constructor(axios: Axios) {
@@ -10,7 +11,7 @@ class Users {
     getViewer() {
         return useQuery({
             queryKey: ['viewer'],
-            queryFn: () => this.axios.get('users/viewer'),
+            queryFn: () => this.axios.get<UserInterfaces.IUser>('users/viewer'),
             staleTime: Infinity,
         });
     }

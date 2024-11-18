@@ -4,4 +4,5 @@ export interface IProps {
     height?: number;
     blur?: boolean;
     full?: boolean;
+    objectFit?: 'cover' | 'contain';
 }

@@ -1,3 +1,4 @@
 import * as MapsInterfaces from './maps';
+import * as UserInterfaces from './user';
 
-export type { MapsInterfaces };
+export type { MapsInterfaces, UserInterfaces };

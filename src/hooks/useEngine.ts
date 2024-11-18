@@ -6,10 +6,11 @@ interface IEngineStore {
     isLoadingAssets: boolean;
     currentLevel: string;
     loadingProgress: number;
+    activeController: boolean;
 }
 
 const engineStore = useZustand<IEngineStore>({
-    keys: ['engineIsLoaded', 'isLoadingAssets', 'currentLevel', 'loadingProgress'],
+    keys: ['engineIsLoaded', 'isLoadingAssets', 'currentLevel', 'loadingProgress', 'activeController'],
 });
 
 interface IProps {
@@ -26,6 +27,7 @@ function useEngine(props?: IProps) {
     const isLoadingAssets = engineStore.use.isLoadingAssets();
     const currentLevel = engineStore.use.currentLevel();
     const loadingProgress = engineStore.use.loadingProgress();
+    const activeController = engineStore.use.activeController();
 
     const call = (eventName: string, data: object) => {
         if (engineIsLoaded.value) {
@@ -33,6 +35,14 @@ function useEngine(props?: IProps) {
             _ClientEvent(stringToNewUTF8(eventName), stringToNewUTF8(JSON.stringify(data)));
         }
     };
+
+    useEffect(() => {
+        const canvas = document.getElementById('canvas');
+
+        if (canvas) {
+            canvas.style.pointerEvents = activeController.value ? 'auto' : 'none';
+        }
+    }, [activeController.value]);
 
     useEffect(() => {
         window.engine.engineEvent = function ({ eventName, data }) {
@@ -64,6 +74,7 @@ function useEngine(props?: IProps) {
         isLoadingAssets: isLoadingAssets.value,
         currentLevel: currentLevel.value,
         loadingProgress: loadingProgress.value,
+        activeController,
         call,
     };
 }

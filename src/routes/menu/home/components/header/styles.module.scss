@@ -2,13 +2,40 @@
 
 .wrapper {
   @include mixins.box-size(100%, 100%);
-  @include mixins.flex-column;
+  @include mixins.flex(space-between);
   box-shadow: var(--box-shadow);
-  color: var(--text-primary);
+  padding: 0 24px;
+
+  .openMenuBtn {
+    stroke-width: 10px;
+    stroke-linecap: round;
+    stroke: var(--primary);
+    cursor: pointer;
+  }
 
   .dropdown {
     @include mixins.box-size(200px, auto);
     @include mixins.flex-column;
     gap: 12px;
+    position: fixed;
+    top: 38px;
+    left: 20px;
+
+    .level{
+      @include mixins.flex-column;
+      background-color: var(--bg-dimming-primary);
+      gap: 12px;
+      color: var(--text-primary);
+      padding: 12px 24px;
+      box-shadow: var(--box-shadow);
+      border-radius: 12px;
+    }
+  }
+
+  .viewerInfo{
+    @include mixins.box-size(auto, 100%);
+    @include mixins.flex(flex-end);
+    gap: 4px;
+    color: var(--text-primary);
   }
 }

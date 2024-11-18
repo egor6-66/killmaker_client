@@ -5,12 +5,13 @@ import * as ImageTypes from './interface';
 import styles from './styles.module.scss';
 
 const Image = (props: ImageTypes.IProps) => {
-    const { full, src, blur, width = 30, height = 30 } = props;
+    const { objectFit = 'contain', full, src, blur, width = 30, height = 30 } = props;
 
     return (
         <div className={styles.wrapper} style={{ width: full ? '100%' : width, height: full ? '100%' : height }}>
             <img
                 className={styles.image}
+                style={{ objectFit }}
                 width={full ? '100%' : blur ? width - 20 : width}
                 height={full ? '100%' : blur ? height - 20 : height}
                 src={src || ''}
